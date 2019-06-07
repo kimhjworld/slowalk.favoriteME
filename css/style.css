@@ -79,3 +79,90 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 .card-post .image-area .more .writer{position: absolute;top: 0;left: 0;background: #000;font-size: 16px;padding: 10px 11px;color: #fff;line-height: 16px;letter-spacing: 2px;}
 
 
+#login {
+    padding: 40px 120px;
+    text-align: right;
+}
+#login .login-wrapper{
+    max-width: 360px;
+    display: inline-block;
+}
+#login .title{
+    font-size: 40px;
+    line-height: 50px;
+    color: #333;
+    margin-bottom: 110px;
+}
+#login .login-sns{
+    margin-bottom: 20px;
+    max-width: 360px;
+    display: inline-block;
+}
+#login .login-sns .link{
+    border: 1px solid #2db400;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 360px;
+    text-align: left;
+}
+#login .login-sns .link .logo{
+    background: green;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+#login .login-sns .link .text{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    padding-left: 10px;
+    border-left: 1px solid green;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+#login .login-self{
+    max-width: 360px;
+    margin: 0;
+    display: inline-block;
+}
+#login .login-self .form-group{
+    margin-bottom: 20px;
+}
+#login .login-self .form-group label{
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+}
+#login .login-self .form-group .form-control{
+    width: 360px;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding: 4px 10px;
+    box-sizing: border-box;
+}
+#login .login-self .bottom{
+    border-top: 1px dotted #eee;
+    margin-top: 40px;
+    padding-top: 40px;
+    text-align: left;
+    position: relative;
+}
+#login .login-self .bottom .form-control{}
+#login .login-self .bottom button{
+    display: inline-block;
+    float: right;
+    height: 50px;
+    background: #544297;
+    color: #fff;
+    padding: 15px 10px 15px 50px;
+}
+#login .login-self .bottom span{
+    font-size: 14px;
+    color: #544297;
+    display: inline-block;
+    margin-top: 15px;
+}
