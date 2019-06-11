@@ -2,14 +2,53 @@
 
 $(document).ready(function () {
 
-    $("#gnb .btn-gnb-folder").on("click",function() {
-        if ($("#wrapper").hasClass("gnb-folder")) {
-            $("#wrapper").removeClass("gnb-folder");
-        } else {
-            $("#wrapper").addClass("gnb-folder");
+    if ($("#wrapper").hasClass("gnb-folder")) {
+        $("#gnb .btn-gnb-folder, .gnb-icon").on("click",function() {
+            if ($("#wrapper").hasClass("gnb-folder")) {
+                $("#wrapper").removeClass("gnb-folder");
+            } else {
+                $("#wrapper").addClass("gnb-folder");
 
-        }
+            }
+        });
+    }
+
+
+    $(".selectbox.writer").change(function () {
+        $(".post-gallery-more .thumbnail").addClass("active");
     });
+
+    if($('.post-gallery .swiper-container').length>0){
+        var swiper = new Swiper('.post-gallery .swiper-container', {
+            //width: 'auto',
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+                formatFractionCurrent : function (number) {
+                    if(number<10) {
+                        return '0'+number;
+                    }else{
+                        return number;
+                    }
+                },
+                formatFractionTotal: function (number) {
+                    if(number<10) {
+                        return '0'+number;
+                    }else{
+                        return number;
+                    }
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    }
 
 
 });
