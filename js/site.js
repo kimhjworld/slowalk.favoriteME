@@ -2,16 +2,27 @@
 
 $(document).ready(function () {
 
-    if ($("#wrapper").hasClass("gnb-folder")) {
-        $("#gnb .btn-gnb-folder, .gnb-icon").on("click",function() {
-            if ($("#wrapper").hasClass("gnb-folder")) {
-                $("#wrapper").removeClass("gnb-folder");
-            } else {
-                $("#wrapper").addClass("gnb-folder");
 
+    $("#gnb .btn-gnb-folder, .gnb-icon").on("click",function() {
+        if ($("#wrapper").hasClass("gnb-folder")) {
+            //gnb 펼치기
+            $("#wrapper").removeClass("gnb-folder");
+            if($("body").hasClass("is-mobile")){
+                console.log("Sd");
+                $("body, html").css('overflow', 'hidden');
             }
-        });
-    }
+        } else {
+            //gnb 접기
+            $("#wrapper").addClass("gnb-folder");
+            if($("body").hasClass("is-mobile")){
+                console.log("Sd");
+                $("body, html").css('overflow', 'auto');
+            }
+
+
+        }
+    });
+
 
 
     $(".selectbox.writer").change(function () {
@@ -46,6 +57,14 @@ $(document).ready(function () {
             },
             fadeEffect: {
                 crossFade: true
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                1200: {
+                    //width: '100%',
+                    init: true
+                }
+
             }
         });
     }
@@ -54,11 +73,35 @@ $(document).ready(function () {
 });
 
 
+function responsiveWeb() {
+    var windowWidth = $( window ).width();
+    if(windowWidth < 1200) { //mobile
+        $("body")
+            .removeClass("is-pc")
+            .addClass("is-mobile");
+        $("#wrapper").addClass("gnb-folder");
+    } else { //pc
+        $("body")
+            .removeClass("is-mobile")
+            .addClass("is-pc");
+
+        if($("#post, #post-detail, #post-list").length > 0 ){
+            $("#wrapper").addClass("gnb-folder");
+        }else{
+            $("#wrapper").removeClass("gnb-folder");
+        }
+
+    }
+
+}
+
 /* Preloader and animations */
 $(window).load(function () { // makes sure the whole site is loaded
+
+    responsiveWeb();
+
     $('#status').fadeOut(); // will first fade out the loading animation
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(350).css({'overflow-y': 'visible'});
 
     /* WOW Elements */
     if (typeof WOW == 'function') {
@@ -71,3 +114,10 @@ $(window).load(function () { // makes sure the whole site is loaded
     }
 
 });
+
+
+$( window ).resize(function() {
+    responsiveWeb();
+});
+
+
