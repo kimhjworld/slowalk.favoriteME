@@ -89,6 +89,7 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #new{float: right;width: 40%;display: block;padding: 0 120px;box-sizing: border-box;}
 #main-visual-title{}
 #member {padding: 40px 120px;text-align: right;}
+#policy {padding: 40px 20px;text-align: right;}
 #wrapper.gnb-folder{padding-right: 80px;}
 #wrapper.gnb-folder #gnb{width: 80px;}
 #wrapper.gnb-folder #gnb .gnb-wrapper .gnb-icon{background: url(../images/common/gnb-icon-small.png) no-repeat center right;position: fixed;top: 40px;right: 25px;display: block;width: 30px;height: 21px;margin-bottom: 0;}
@@ -312,6 +313,21 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #program-detail .visual-detail .float-editor .image{display : block;margin-bottom:20px;}
 
 
+
+#policy .policy-wrapper{max-width: 360px;display: block;max-width: none;}
+#policy .title{font-size: 40px;line-height: 50px;color: #333;margin-bottom: 110px;}
+#policy .btn-close{position: absolute;left: 0;top: 0;width: 40px;height: 40px;background: url(../images/common/mobile-close.png) no-repeat;background-size: 40px auto;font-size: 0;}
+#policy .notice{background: #f5f5f5;border-top: 3px solid #544297;padding: 30px;width: auto;margin-bottom: 40px;line-height: 25px;}
+#policy .policy-detail{display: block;text-align: right;}
+#policy .policy-detail .group{margin-top: 40px;line-height: 20px;font-size: 14px;}
+#policy .policy-detail .group strong{font-size: 18px;margin-bottom: 20px;display: block;}
+#policy .button-area {margin-top: 40px}
+#policy .button-area button{display: inline-block;float: right;height: 50px;background: #544297;color: #fff;padding: 15px 20px 15px 60px;font-size: 16px;}
+
+
+
+
+
 @media all and (max-width: 1200px) {
 
 
@@ -423,9 +439,7 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
     #mypage .mypage-table .list li.table-body{min-height: auto;padding: 15px 0;}
     #mypage .mypage-table .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
     #mypage .mypage-table .list li .text{font-size: 13px;line-height: 16px;vertical-align: top;}
-    #mypage .mypage-table .list li .area-title .text{
-        line-height: 1;
-    }
+    #mypage .mypage-table .list li .area-title .text{ line-height: 1; }
     #mypage .mypage-table .list li .area-seller .text{font-weight: bold;}
     #mypage .mypage-table .list li .area-cost .text{color: #544297;font-weight: bold;}
     #mypage .mypage-table .list li .text em{color: #544297;}
