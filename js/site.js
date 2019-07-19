@@ -72,6 +72,13 @@ $(document).ready(function () {
 
 });
 
+function hidePopup(targetID) {
+    $(targetID).removeClass("active");
+}
+
+function showPopup(targetID) {
+    $(targetID).addClass("active");
+}
 
 function responsiveWeb() {
     var windowWidth = $( window ).width();
