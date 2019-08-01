@@ -204,6 +204,14 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #mypage {padding: 40px 120px;text-align: right;min-width: 880px;overflow-x: auto;width: 100%;box-sizing: border-box;}
 #mypage .member-wrapper{max-width: 360px;display: inline-block;}
 #mypage .title{font-size: 40px;line-height: 50px;color: #333;margin-bottom: 110px;}
+#mypage .lnb{display: block;overflow: auto;height: auto;margin-bottom: 40px;text-align: right;}
+#mypage .lnb li{display: inline-block; }
+#mypage .lnb li:before{content: '/';margin: 0 14px;color: #cccccc;font-size: 24px;}
+#mypage .lnb li:first-child:before{display: none;}
+#mypage .lnb li a{display: inline-block;color: #544297;font-weight: bold;}
+#mypage .lnb li.active a{background: #544297;color: #fff;padding: 0 2px;}
+#mypage .lnb li a .text{font-size: 20px}
+
 #mypage .mypage-table{display: block;width: 100%;}
 #mypage .mypage-table .list{display: block;width: 100%;}
 #mypage .mypage-table .list li.table-header{width: 100%;display: block;overflow: auto;border-bottom: 4px solid #544297;padding: 10px 0;}
@@ -221,6 +229,59 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #mypage .mypage-table .list li .area-seller{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
 #mypage .mypage-table .list li .area-cost{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
 #mypage .mypage-table .list li .area-status{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
+
+
+#mypage .mypage-host{display: block;width: 100%;}
+#mypage .mypage-host .list{display: block;width: 100%;}
+#mypage .mypage-host .list li.table-header{width: 100%;display: block;overflow: auto;border-bottom: 4px solid #544297;padding: 10px 0;}
+#mypage .mypage-host .list li.table-body{display: block;width: 100%;overflow: auto;padding: 10px 0;min-height: 70px;border-bottom: 1px solid #ddd;}
+#mypage .mypage-host .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
+#mypage .mypage-host .list li .text{font-size: 16px;color: #666;vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+#mypage .mypage-host .list li .text-purple{color: #544297; font-weight: bold}
+#mypage .mypage-host .list li .area-date .text{color: #999;}
+#mypage .mypage-host .list li .area-title .text{color: #544297; font-weight:bold; vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+#mypage .mypage-host .list li .area-seller .text{color: #666;}
+#mypage .mypage-host .list li .area-cost .text{color: #544297;font-weight: bold;}
+#mypage .mypage-host .list li .area-linkdin .text{line-height: 30px;text-align: left;}
+#mypage .mypage-host .list li .text em{color: #544297;vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+#mypage .mypage-host .list li .image{position: absolute;top: 0;left: 0;}
+#mypage .mypage-host .list li .area-date{float: left;width: 15%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;}
+#mypage .mypage-host .list li .area-title{float: left;width: 15%;position: relative;box-sizing: border-box;padding-left: 70px;text-align: left;}
+#mypage .mypage-host .list li .area-linkdin{float: left;width: 40%;padding: 0 10px;box-sizing: border-box;}
+#mypage .mypage-host .list li .area-cost{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
+#mypage .mypage-host .list li .area-pay{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
+#mypage .mypage-host .list li .area-status{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
+
+
+#mypage .util{overflow: auto;height: auto;display: block;margin-bottom: 40px;}
+#mypage .util .left{float: left;}
+#mypage .util .right{float: right;}
+#mypage .util .right .selectbox{width:100px !important}
+#mypage .util .text{font-size: 16px; color:#544297; margin-right: 10px; font-weight: bold }
+
+
+#mypage .selectbox {position: relative;width: 200px;display: inline-block;border: 1px solid #544297;}
+#mypage .selectbox:before {content: "";position: absolute;top: 50%;right: 15px;width: 0;height: 0;margin-top: -1px;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #544297;}
+#mypage .selectbox.date:before{border-top: 5px solid #666;}
+#mypage .selectbox label {position: absolute;top: 1px;left: 5px;padding: 10px 10px;z-index: -1;font-size: 14px;color: #544297;font-family: inherit;font-weight: bold;line-height: 30px;}
+#mypage .selectbox.date label{color : #666;font-weight: normal;text-align: center;}
+#mypage .selectbox select {width: 100%;height: 50px;line-height: normal;font-family: inherit;padding: 0px 10px;border: 0;opacity: 0;filter:alpha(opacity=0);-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+
+
+
+#mypage .mypage-pagination{margin-top: 40px;width: 100%;text-align: center;}
+#mypage .mypage-pagination ul{overflow: auto;text-align: center;display: inline-block;width: auto;}
+#mypage .mypage-pagination ul li{float: left; line-height: 30px; vertical-align: middle}
+#mypage .mypage-pagination ul li a{display: inline-block;color: #999999;font-size: 14px;line-height: 25px;margin: 0 10px; line-height: 30px; vertical-align: middle}
+#mypage .mypage-pagination ul li.active {}
+#mypage .mypage-pagination ul li.active a{color: #544297;border-bottom: 1px solid #544297;}
+#mypage .mypage-pagination ul li.prev a{background: url(../images/common/page-prev.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#mypage .mypage-pagination ul li.next a{background: url(../images/common/page-next.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#mypage .mypage-pagination ul li.first a{background: url(../images/common/page-first.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#mypage .mypage-pagination ul li.last a{background: url(../images/common/page-last.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+
+
+
 #mypage .mypage-action{padding-top: 40px;text-align: right;display: block;width: 100%;}
 #mypage .mypage-action .btn-minor{display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;font-size: 16px;}
 #mypage .mypage-action .btn-major{display: inline-block;height: 50px;background: #a080cf;color: #fff;padding: 15px 10px 15px 50px;font-size: 16px;}
