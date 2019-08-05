@@ -47,21 +47,31 @@
                 <li><a href="#" class="link">PROGRAM</a></li>
                 <li><a href="#" class="link">POST</a></li>
             </ul>
-            <ul class="sub-menu">
-                <li><a href="#" class="link">CONTACT</a></li>
-                <li><a href="#" class="link">JOIN</a></li>
-                <li><a href="#" class="link">LOGIN</a></li>
-            </ul>
-            <ul class="share">
-                <li><a href="#" class="link facebook"><span class="blind">facebook</span></a></li>
-                <li><a href="#" class="link twitter"><span class="blind">twitter</span></a></li>
-                <li><a href="#" class="link instargram"><span class="blind">instargram</span></a></li>
-            </ul>
-            <p class="site-rule">
-                <a href="#" class="link">개인정보취급동의</a><span>/</span><a href="#" class="link">이용약관</a>
-            </p>
-            <p class="footer-info">정보취급관리자 : 000</p>
-            <p class="footer-info">사업자번호 : 000</p>
+            <div class="bottom">
+                <ul class="sub-menu">
+                    <li><a href="#" class="link">HOME</a></li>
+                    <li><a href="#" class="link">MY PAGE</a></li>
+                    <li><a href="#" class="link">JOIN</a></li>
+                    <li><a href="#" class="link">고객지원</a></li>
+                    <li><a href="#" class="link">호스트지원</a></li>
+                </ul>
+                <ul class="share">
+                    <li><a href="#" class="link facebook"><span class="blind">facebook</span></a></li>
+                    <li><a href="#" class="link twitter"><span class="blind">twitter</span></a></li>
+                    <li><a href="#" class="link instargram"><span class="blind">instargram</span></a></li>
+                </ul>
+                <p class="site-rule">
+                    <a href="#" class="link">개인정보취급동의</a><span>/</span><a href="#" class="link">이용약관</a>
+                </p>
+                <p class="footer-info">정보취급관리자 : (주)임팩트스테이션   </p>
+                <p class="footer-info">정보취급관리자 : 000</p>
+                <p class="footer-info">기업은행, 087-064504-04-038, (주)임팩트스테이션</p>
+                <p class="footer-info">사업자등록번호 : 683-86-00599 (대표자 : 송상훈)</p>
+                <p class="footer-info">favoriteme@impactstation.kr</p>
+                <p class="footer-info">서울특별시 서대문구 통일로 413, 503호 (홍제동)</p>
+                <p class="footer-info">전화번호 : 02-6385-8104</p>
+                <p class="copyright">Copyright 2019 FavoriteMe All Rights Reserved.</p>
+            </div>
         </div>
 
     </div>
@@ -69,18 +79,26 @@
         <div id="mypage">
             <div class="mypage-wrapper">
                 <h2 class="title">마이페이지</h2>
+                <div>
+                    <ul class="lnb">
+                        <li  class="active"><a href="#"><span class="text">결제내역</span></a></li>
+                        <li><a href="#"><span class="text">스크랩</span></a></li>
+                        <li><a href="#"><span class="text">호스트</span></a></li>
+                        <li><a href="#"><span class="text">내 정보</span></a></li>
+                    </ul>
+                </div>
                 <div class="mypage-table">
                     <ul class="list">
                         <!-- 첫번째 li는 title로 쓰입니다 -->
                         <li class="table-header">
                             <div class="area-date">
-                                <span class="title">날짜</span>
+                                <span class="title">결제일</span>
                             </div>
                             <div class="area-title">
                                 <span class="title">프로그램명</span>
                             </div>
                             <div class="area-seller">
-                                <span class="title">판매자</span>
+                                <span class="title">호스트</span>
                             </div>
                             <div class="area-cost">
                                 <span class="title">비용</span>
@@ -103,8 +121,9 @@
                             <div class="area-cost">
                                 <span class="text"><em>29,000 원 </em></span>
                             </div>
-                            <div class="area-status">
-                                <span class="text">결제</span>
+                            <!-- 클래스구분자: reqeust(환불신청) wait(환불대기) success(완료) -->
+                            <div class="area-status request">
+                                <span class="text">환불신청</span>
                             </div>
                         </li>
                         <li class="table-body">
@@ -121,8 +140,8 @@
                             <div class="area-cost">
                                 <span class="text"><em>29,000 원 </em></span>
                             </div>
-                            <div class="area-status">
-                                <span class="text">결제</span>
+                            <div class="area-status wait">
+                                <span class="text">환불대기</span>
                             </div>
                         </li>
                         <li class="table-body">
@@ -139,8 +158,8 @@
                             <div class="area-cost">
                                 <span class="text"><em>29,000 원 </em></span>
                             </div>
-                            <div class="area-status">
-                                <span class="text">결제</span>
+                            <div class="area-status success">
+                                <span class="text">환불완료</span>
                             </div>
                         </li>
                         <li class="table-body">
@@ -183,9 +202,24 @@
 
                     </ul>
                 </div>
-                <div class="mypage-action">
-                    <button type="submit" class="btn-minor">비밀번호 수정</button>
-                    <button type="submit" class="btn-major">회원탈퇴</button>
+                <div class="mypage-pagination">
+                    <ul>
+                        <li class="first"><a href="#">첫페이지로</a></li>
+                        <li class="prev"><a href="#">전페이지</a></li>
+                        <li class="active"><a href="#">01</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#">04</a></li>
+                        <li><a href="#">05</a></li>
+                        <li><a href="#">06</a></li>
+                        <li><a href="#">07</a></li>
+                        <li><a href="#">08</a></li>
+                        <li><a href="#">09</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="next"><a href="#">다음페이지</a></li>
+                        <li class="last"><a href="#">끝페이지로</a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>

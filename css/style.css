@@ -65,6 +65,10 @@ a:link, a:visited, a:active{color:#444;text-decoration:none}
 a:hover{color:#1179ea;text-decoration:underline;cursor:pointer}
 button{border:0;cursor:pointer}
 input[type="text"],input[type="password"],input[type="image"],input[type="search"]{-webkit-appearance:none;-webkit-border-radius:0}
+input[type=number]::-webkit-outer-spin-button {  -webkit-appearance: none;}
+input[type=number]::-webkit-inner-spin-button {  -webkit-appearance: none;}
+input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number - Firefox */
+
 
 .blind{ position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);overflow: hidden;text-indent: -5000em;}
 .row{width: 100%;display: block;clear: both;overflow: auto;padding: 40px 0;}
@@ -95,6 +99,9 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #wrapper.gnb-folder #gnb .gnb-wrapper .gnb-icon{background: url(../images/common/gnb-icon-small.png) no-repeat center right;position: fixed;top: 40px;right: 25px;display: block;width: 30px;height: 21px;margin-bottom: 0;}
 #wrapper.gnb-folder #gnb .btn-gnb-folder{background: url(../images/common/gnb-menu.png) no-repeat center right;position: fixed;width: 30px;height: 30px;top: 50%;right: 25px;display: block;margin-top: -15px;z-index: 10;}
 #wrapper.gnb-folder .gnb-wrapper .gnb-icon .link{ display: none;}
+#wrapper.gnb-folder #gnb .bottom{    display: none;}
+#wrapper.gnb-folder #gnb .gnb-wrapper .gnb-icon:after{display: none}
+
 
 /*popup  effect   */
 .popup-layer  {display:none; opacity:0 ;  transition: all 0.4s; -webkit-transition: all 0.4s; transition-timing-function:  cubic-bezier(.71,.24,.05,.98) ;-webkit-transition-timing-function: cubic-bezier(.71,.24,.05,.98) ;}
@@ -111,9 +118,11 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 
 /*gnb*/
 .gnb-wrapper{padding: 40px 80px;text-align: right;position: fixed;border-left: 1px solid #a080cf;height: 100%;box-sizing: border-box;width: inherit;}
-.gnb-wrapper .gnb-icon{display: inline-block;width: 103px;height: 71px;background: url(../images/common/gnb-icon.png) no-repeat center right;background-size: contain;margin-bottom: 90px;}
-.gnb-wrapper .gnb-icon .link{}
-.gnb-wrapper .main-menu{display: block;margin-bottom: 200px;text-align: right;}
+.gnb-wrapper .gnb-icon{display: inline-block;width: 103px;height: 71px;background: url(../images/common/gnb-icon.png) no-repeat center right;background-size: contain;margin-bottom: 50px;}
+.gnb-wrapper .gnb-icon:after{content:'';position: absolute;left: 15px;top: 50%;cursor: pointer;background: url(../images/common/gnb-menu.png) no-repeat center right;width: 30px;height: 30px;display: block;margin-top: -15px;z-index: 10;}
+.gnb-wrapper .bottom{position: absolute;bottom: 40px;right: 80px;}
+.gnb-wrapper .bottom .copyright{font-size: 14px;color: #999999;line-height: 20px;display: block;text-align: right;margin-top: 30px;}
+.gnb-wrapper .main-menu{display: block;margin-bottom: 50px;text-align: right;}
 .gnb-wrapper .main-menu li{ text-align: right; display: block;}
 .gnb-wrapper .main-menu .link{display: inline-block;font-size: 36px;line-height: 60px;color: #544297;text-transform: uppercase;text-align: right;font-weight: 700;padding-left: 10px;}
 .gnb-wrapper .main-menu .link.active{position: relative;color: #fff;z-index: 10;background: #544297;}
@@ -179,6 +188,9 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 
 #member .member-wrapper{max-width: 360px;display: inline-block;}
 #member .title{font-size: 40px;line-height: 50px;color: #333;margin-bottom: 110px;}
+#member .top{text-align: left;margin-bottom: 30px;border-bottom: 1px dotted #ccc;padding-bottom: 20px;}
+#member .top .rule{margin-bottom: 10px;}
+#member .top .rule a{color:#544297; text-decoration: underline}
 #member .member-sns{margin-bottom: 40px;max-width: 360px;display: inline-block;}
 #member .member-sns .link{border: 1px solid #2db400;display: inline-block;padding: 10px;box-sizing: border-box;width: 360px;text-align: left;}
 #member .member-sns .link:hover{text-decoration: none;}
@@ -196,10 +208,14 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #member .member-self .form-group label{font-size: 14px;line-height: 22px;color: #333;}
 #member .member-self .form-group .form-control{width: 360px;border: 1px solid #ccc;height: 40px;line-height: 40px;padding: 4px 10px;box-sizing: border-box;color: #544297;}
 #member .member-self .form-group .form-control[type="password"]{font-family: Arial}
-#member .member-self .bottom{border-top: 1px dotted #eee;margin-top: 40px;padding-top: 40px;text-align: left;position: relative;}
+#member .member-self .bottom{border-top: 1px dotted #eee;margin-top: 40px;padding-top: 40px;text-align: left;position: relative;overflow: auto;}
 #member .member-self .bottom .form-control{}
 #member .member-self .bottom button{display: inline-block;float: right;height: 50px;background: #544297;color: #fff;padding: 15px 10px 15px 50px;}
 #member .member-self .bottom span{font-size: 14px;color: #544297;display: inline-block;margin-top: 15px;}
+#member .member-self .find-link{margin-top: 60px;display: block;}
+#member .member-self .find-link .user-link{display: block;margin-bottom: 20px;}
+#member .member-self .find-link .user-link .text{color: #544297;border-bottom: 1px solid #544297;}
+
 
 #mypage {padding: 40px 120px;text-align: right;min-width: 880px;overflow-x: auto;width: 100%;box-sizing: border-box;}
 #mypage .member-wrapper{max-width: 360px;display: inline-block;}
@@ -217,7 +233,7 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #mypage .mypage-table .list li.table-header{width: 100%;display: block;overflow: auto;border-bottom: 4px solid #544297;padding: 10px 0;}
 #mypage .mypage-table .list li.table-body{display: block;width: 100%;overflow: auto;padding: 10px 0;min-height: 70px;border-bottom: 1px solid #ddd;}
 #mypage .mypage-table .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
-#mypage .mypage-table .list li .text{font-size: 16px;line-height: 16px;color: #999;vertical-align: top;}
+#mypage .mypage-table .list li .text{font-size: 16px;line-height: 16px;color: #999;vertical-align: top;line-height: 60px;}
 #mypage .mypage-table .list li .area-date .text{}
 #mypage .mypage-table .list li .area-title .text{color: #333;vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
 #mypage .mypage-table .list li .area-seller .text{color: #666;}
@@ -225,10 +241,13 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #mypage .mypage-table .list li .text em{color: #544297;}
 #mypage .mypage-table .list li .image{position: absolute;top: 0;left: 0;}
 #mypage .mypage-table .list li .area-date{float: left;width: 15%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;}
-#mypage .mypage-table .list li .area-title{float: left;width: 50%;position: relative;box-sizing: border-box;padding-left: 70px;text-align: left;}
+#mypage .mypage-table .list li .area-title{float: left;width: 45%;position: relative;box-sizing: border-box;padding-left: 70px;text-align: left;}
 #mypage .mypage-table .list li .area-seller{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
-#mypage .mypage-table .list li .area-cost{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
-#mypage .mypage-table .list li .area-status{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
+#mypage .mypage-table .list li .area-cost{float: left;width: 12%;padding: 0 10px;box-sizing: border-box;}
+#mypage .mypage-table .list li .area-status{float: left;width: 13%;box-sizing: border-box;}
+#mypage .mypage-table .list li .area-status.request .text{border: 1px solid #544297;color: #544297;padding: 10px;}
+#mypage .mypage-table .list li .area-status.wait .text{border: 1px solid #a080cf;color: #a080cf;padding: 10px;}
+#mypage .mypage-table .list li .area-status.success .text{background: #544297;color: #fff;padding: 10px;}
 
 
 #mypage .mypage-host{display: block;width: 100%;}
@@ -253,12 +272,43 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #mypage .mypage-host .list li .area-status{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
 
 
+
+#mypage .mypage-form {max-width: 360px;margin: 0;display: inline-block;}
+#mypage .mypage-form .form-group{margin-bottom: 20px;}
+#mypage .mypage-form .division{border-top: 1px dotted #eee;margin-top: 40px;padding-top: 40px;}
+#mypage .mypage-form .read-area .form-group label{font-size: 14px;line-height: 22px;color: #544297;margin-bottom: 20px;}
+#mypage .mypage-form .read-area .form-group span{display: block;border-bottom: 2px solid #666;padding-bottom: 15px;font-weight: bold;}
+#mypage .mypage-form .read-area .form-group .form-control{width: 360px;border: 1px solid #ccc;height: 40px;line-height: 40px;padding: 4px 0px;box-sizing: border-box;color: #544297;border: 0;text-align: right;font-size: 16px;color: #333333;}
+#mypage .mypage-form .read-area .form-group .form-control[type="password"]{font-family: Arial}
+#mypage .mypage-form .read-area .form-group textarea{height: 120px !important;text-align: left;padding: 0;}
+
+#mypage .mypage-form .write-area{margin-top: 40px;border-top: 1px dotted #ccc;padding-top: 40px;display: block;overflow: auto;}
+#mypage .mypage-form .write-area .form-group{margin-bottom: 20px;}
+#mypage .mypage-form .write-area .form-group.division{border-top: 1px dotted #eee;margin-top: 40px;padding-top: 40px;}
+#mypage .mypage-form .write-area .form-group label{font-size: 14px;line-height: 22px;color: #333;}
+#mypage .mypage-form .write-area .form-group span{display: block;padding-bottom: 15px;font-weight: bold;}
+#mypage .mypage-form .write-area .form-group .selectbox{width: 100%;box-sizing: border-box;}
+#mypage .mypage-form .write-area .form-group .selectbox select {height: 40px;}
+#mypage .mypage-form .write-area .form-group .form-control{width: 360px;border: 1px solid #ccc;height: 40px;line-height: 40px;padding: 4px 10px;box-sizing: border-box;color: #544297;}
+#mypage .mypage-form .write-area .form-group .form-control[type="password"]{font-family: Arial}
+#mypage .mypage-form .write-area .form-group textarea{height: 120px !important;text-align: left;padding: 0;}
+#mypage .mypage-form .user-link{margin-top:20px; display: block;margin-bottom: 20px;}
+#mypage .mypage-form .user-link .text{color: #544297;border-bottom: 1px solid #544297;}
+
+
+#mypage .mypage-form .button-area{}
+#mypage .mypage-form .button-area .btn-minor{display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;}
+#mypage .mypage-form .button-area .btn-major{display: inline-block;height: 50px;background: #544297;color: #fff;padding: 15px 10px 15px 50px;}
+
+
 #mypage .util{overflow: auto;height: auto;display: block;margin-bottom: 40px;}
 #mypage .util .left{float: left;}
 #mypage .util .right{float: right;}
 #mypage .util .right .selectbox{width:100px !important}
 #mypage .util .text{font-size: 16px; color:#544297; margin-right: 10px; font-weight: bold }
 
+#mypage .guide{margin: 20px 0; }
+#mypage .guide p{line-height: 24px; color: #666666; font-size: 14px }
 
 #mypage .selectbox {position: relative;width: 200px;display: inline-block;border: 1px solid #544297;}
 #mypage .selectbox:before {content: "";position: absolute;top: 50%;right: 15px;width: 0;height: 0;margin-top: -1px;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #544297;}
@@ -280,7 +330,11 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
 #mypage .mypage-pagination ul li.first a{background: url(../images/common/page-first.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
 #mypage .mypage-pagination ul li.last a{background: url(../images/common/page-last.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
 
-
+#mypage .mypage-scrap{ margin-right: -60px;  }
+#mypage .mypage-scrap .item-lists {display: block;width: 100%;}
+#mypage .mypage-scrap .item-lists li{float:left;width:33.3%;margin-bottom: 40px;padding: 0 60px;box-sizing: border-box;}
+#mypage .mypage-scrap .item-lists li:nth-child(3n){}
+#mypage .mypage-scrap .item-lists li:nth-child(3n-1){}
 
 #mypage .mypage-action{padding-top: 40px;text-align: right;display: block;width: 100%;}
 #mypage .mypage-action .btn-minor{display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;font-size: 16px;}
@@ -452,7 +506,8 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
     .gnb-wrapper{padding: 20px;position: fixed;border-left: 0;height: 100%;box-sizing: border-box;width: 100%;overflow: auto;}
     .gnb-wrapper .gnb-icon{width: 70px;height: 71px;background: url(../images/common/gnb-icon.png) no-repeat center right;background-size: contain;margin-bottom: 30px;}
     .gnb-wrapper .gnb-icon .link{background: red;position: absolute;left: 0;top: 20px;width: 40px;height: 40px;background: url(../images/common/mobile-close.png) no-repeat;background-size: 40px auto;}
-
+    .gnb-wrapper .gnb-icon:after{ display: none;}
+    .gnb-wrapper .bottom{    position: static;  }
     .gnb-wrapper .main-menu{margin-bottom: 80px;}
     .gnb-wrapper .main-menu li{ text-align: right; display: block;}
     .gnb-wrapper .main-menu .link{line-height: 50px;padding-left: 10px;}
@@ -530,6 +585,9 @@ input[type="text"],input[type="password"],input[type="image"],input[type="search
     #member .member-self .bottom .form-control{}
     #member .member-self .bottom button{display: inline-block;float: right;height: 50px;background: #544297;color: #fff;padding: 15px 10px 15px 50px;}
     #member .member-self .bottom span{font-size: 14px;color: #544297;display: inline-block;margin-top: 15px;}
+    #member .member-self .find-link{margin-top: 30px;}
+    #member .member-self .find-link .user-link{display: block;margin-bottom: 10px;}
+    #member .member-self .find-link .user-link .text{color: #544297;border-bottom: 1px solid #544297; font-size: 14px}
 
     #mypage {padding: 20px;min-width: auto;}
     #mypage .member-wrapper{max-width: 360px;display: inline-block;}
