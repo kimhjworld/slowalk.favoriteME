@@ -163,7 +163,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 .card-post .image-area{width: 100%;display: block;position: relative;}
 .card-post .image-area .more{display: block;width: 100%;height: 100%;}
 .card-post .image-area .more .image{width: 100%;height: auto;}
-.card-post .image-area .more .text{position: absolute;font-size: 20px;line-height: 26px;color: #333;top: 50%;left: 0;width: 100%;text-align: center;transform: translateY(-50%);padding: 0 90px;display: block;box-sizing: border-box;}
+.card-post .image-area .more .text{position: absolute;font-size: 20px;line-height: 26px;color: #fff;top: 50%;left: 0;width: 100%;text-align: center;transform: translateY(-50%);padding: 0 90px;display: block;box-sizing: border-box;}
 .card-post .image-area .more .writer{position: absolute;top: 0;left: 0;background: #000;font-size: 16px;padding: 10px 11px;color: #fff;line-height: 16px;letter-spacing: 2px;}
 
 #main .row.col-2{position:relative;padding-bottom: 0;}
@@ -250,6 +250,9 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #mypage .mypage-table .list li .area-status.success .text{background: #544297;color: #fff;padding: 10px;}
 
 
+#mypage .total{margin:40px 0; text-align: left}
+#mypage .total .label{font-size: 16px; color: #666666}
+#mypage .total .value{font-size: 24px;  color: #544297;}
 #mypage .mypage-host{display: block;width: 100%;}
 #mypage .mypage-host .list{display: block;width: 100%;}
 #mypage .mypage-host .list li.table-header{width: 100%;display: block;overflow: auto;border-bottom: 4px solid #544297;padding: 10px 0;}
@@ -257,6 +260,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #mypage .mypage-host .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
 #mypage .mypage-host .list li .text{font-size: 16px;color: #666;vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
 #mypage .mypage-host .list li .text-purple{color: #544297; font-weight: bold}
+#mypage .mypage-host .list li .area-number .text{color: #999;}
 #mypage .mypage-host .list li .area-date .text{color: #999;}
 #mypage .mypage-host .list li .area-title .text{color: #544297; font-weight:bold; vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
 #mypage .mypage-host .list li .area-seller .text{color: #666;}
@@ -264,9 +268,10 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #mypage .mypage-host .list li .area-linkdin .text{line-height: 30px;text-align: left;}
 #mypage .mypage-host .list li .text em{color: #544297;vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
 #mypage .mypage-host .list li .image{position: absolute;top: 0;left: 0;}
-#mypage .mypage-host .list li .area-date{float: left;width: 15%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;}
+#mypage .mypage-host .list li .area-number{float: left;width: 7%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;}
+#mypage .mypage-host .list li .area-date{float: left;width: 8%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;}
 #mypage .mypage-host .list li .area-title{float: left;width: 15%;position: relative;box-sizing: border-box;padding-left: 70px;text-align: left;}
-#mypage .mypage-host .list li .area-linkdin{float: left;width: 40%;padding: 0 10px;box-sizing: border-box;}
+#mypage .mypage-host .list li .area-linkdin{float: left;width: 40%;padding: 0 10px;box-sizing: border-box; text-align: left}
 #mypage .mypage-host .list li .area-cost{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
 #mypage .mypage-host .list li .area-pay{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
 #mypage .mypage-host .list li .area-status{float: left;width: 10%;padding: 0 10px;box-sizing: border-box;}
@@ -360,40 +365,66 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #post-list .search .search-box .form-control::placeholder{color:#fff}
 #post-list .search .search-box button{width: 22px;height: 22px;background: url(../images/post/icon-search.png) no-repeat center center;position: absolute;right: 0;bottom: 10px;}
 #post-list .search .keyword{}
-#post-list .search .keyword .link{font-size: 16px;line-height: 1.5;color: #ffffff;text-decoration: underline;margin-right: 10px;vertical-align: middle;}
+#post-list .search .keyword .link{font-size: 16px;line-height: 22px;color: #ffffff;margin-right: 10px;vertical-align: middle;}
+#post-list .search .keyword .link:after{content: '/';font-size: 16px;margin-left: 12px;}
+#post-list .search .keyword .link:last-child:after{content:'';}
+/*
 #post-list .search .keyword .link.highlight{color: #a080cf;font-weight: bold;font-size: 26px;}
 #post-list .search .keyword .link.gray{color: #999999;}
 #post-list .search .keyword .link.zoom{font-size: 26px;}
+*/
 #post-list .card-post .image-area .more .text{padding:0 10px;}
 
+
+
+#post-list .post-pagination{margin-top: 40px;width: 100%;text-align: center;}
+#post-list .post-pagination ul{overflow: hidden;text-align: center;display: inline-block;width: auto;}
+#post-list .post-pagination ul li{float: left; line-height: 30px; vertical-align: middle}
+#post-list .post-pagination ul li a{display: inline-block;color: #999999;font-size: 14px;line-height: 25px;margin: 0 10px; line-height: 30px; vertical-align: middle}
+#post-list .post-pagination ul li.active {}
+#post-list .post-pagination ul li.active a{color: #fff;border-bottom: 1px solid #fff;}
+#post-list .post-pagination ul li.prev a{background: url(../images/post/page-prev.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#post-list .post-pagination ul li.next a{background: url(../images/post/page-next.png) no-repeat center center;width:30px;height:30px;display: inline-block;font-size: 0;}
+#post-list .post-pagination ul li.first a{background: url(../images/post/page-first.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#post-list .post-pagination ul li.last a{background: url(../images/post/page-last.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+
+
+
 #post-detail{width: 100%;display: block;padding: 0;box-sizing: border-box;}
-#post-detail .title{font-size: 40px;line-height: 50px;color: #333;margin-bottom: 110px;padding: 0 120px;}
-#post-detail .visual{width: 100%;display: block;margin-bottom: 40px;}
+#post-detail .title{font-size: 40px;line-height: 50px;color: #333;margin-bottom: 100px;padding: 0 120px;}
+#post-detail .title .writer{font-size: 24px;color: #000;margin:20px 0 ;display: block; line-height: 24px;}
+#post-detail .title .date{font-size: 16px;color: #544297; display: block; font-weight: normal; line-height: 16px;}
+
+#post-detail .visual{width: 100%;display: block;margin-bottom: 100px;}
 #post-detail .visual .image{height: auto;width: 100%;}
 #post-detail .info {overflow:auto; padding: 0 120px;width: 100%;box-sizing: border-box;display: block;}
-#post-detail .info strong{font-size: 30px;color: #000;margin-bottom: 40px;display: block;}
 #post-detail .info p{font-size: 16px;line-height: 32px;width: 50%;display: inline-block;color: #999999;float: left;}
 #post-detail .info .keyword{display: inline-block;width: 50%;vertical-align: top;float: left;padding-left: 40px;box-sizing: border-box;}
 #post-detail .info .keyword .link{font-size: 16px;line-height: 32px;color: #544297;text-decoration: underline;margin-right: 10px;vertical-align: middle;display: block;}
 #post-detail .editor{margin-top: 40px;padding: 0 120px;}
+#post-detail .sns-api{margin-top: 40px;margin: 40px 120px;border-top:1px solid #ccc;}
 #post-detail .other-post{padding: 0 60px;}
 #post-detail .section-title{margin: 0 120px;margin-bottom: 30px;margin-top: 40px;padding-top: 40px;border-top: 1px solid #cccccc;}
 #post-detail .item-lists {display: block;width: 100%;}
 #post-detail .item-lists li{float:left;width:33.3%;margin-bottom: 40px;padding: 0 60px;box-sizing: border-box;}
 #post-detail .card-post .image-area .more .text{padding:0 10px;}
 
+
 .post-gallery{padding: 100px 0;}
 .post-gallery .swiper-wrapper .swiper-slide{text-align: center}
-.post-gallery .card-post{position: relative;padding-left: 300px;height: 720px;width: auto;margin-bottom: 70px;}
-.post-gallery .card-post .image-area{width: auto;height: 100%;float: left;}
+.post-gallery .card-post{position: relative;height: 100%;width: 100%;box-sizing: border-box;padding: 0 380px;overflow: auto;}
+.post-gallery .card-post .image-area{width: auto;height: 100%;float: left; text-align: left}
 .post-gallery .card-post .image-area .more{position: relative;display: block;width: auto;padding-right: 200px;}
-.post-gallery .card-post .image-area .more .image{height: 720px;width: auto;}
-.post-gallery .card-post .image-area .more .text{font-size: 40px;line-height: 52px;right: 0;left: auto;top: 54%;color: #fff;padding-left: 160px;text-align: right;padding-right: 0;width: 100%;transform: translateY(0);    display: block;}
-.post-gallery .swiper-pagination{color: #fff;position: absolute;top: 290px;z-index: 10;left: 0;font-size: 0;}
+.post-gallery .card-post .image-area .more .image{height: calc(100vh - 300px);width: auto;max-width: calc(100vh - 400px);}
+.post-gallery .card-post .image-area .more .text{font-size: 40px;line-height: 52px;right: 0;left: auto;top: 54%;color: #fff;padding-left: 160px;text-align: right;padding-right: 0;width: 100%;transform: translateY(0);display: block;max-width: 100%;word-break: break-all;}
+.post-gallery .card-post .image-area .more .content{font-size: 16px;line-height: 32px;right: 0;top: 54%;color: #fff;padding-left: 160px;text-align: right;padding-right: 0;width: 100%;display: block;word-break: break-all;position: absolute;margin-top: 120px;box-sizing: border-box;}
+.post-gallery .swiper-pagination{color: #fff;position: absolute;top: 250px;z-index: 10;left: 80px;font-size: 0;}
 .post-gallery .swiper-pagination .swiper-pagination-current{font-size: 72px;font-weight: bold;display: block;}
 .post-gallery .swiper-pagination .swiper-pagination-total{color: #666666;font-size: 72px;font-weight: bold;display: block;}
-.post-gallery .swiper-button-group{background: url(../images/post/btn-next.png) no-repeat left center;height: 37px;width: 100%;display: block;position: absolute;top: 350px;left: 0;width: 1400px;}
-.post-gallery .swiper-button-next{position: absolute;width: 100%;height: 50px;background: transparent;right: 0;z-index: 1000;/* cursor: pointer; */}
+.post-gallery .swiper-button-group{height: 37px;width: 100%;display: block;position: absolute;top: 320px;left: 0;border-top: 1px solid #666;margin-top: 18px;}
+.post-gallery .swiper-button-prev{position: absolute;width: 24px;height: 42px;background: url(../images/post/swiper-prev.png) no-repeat center center;left: 0;z-index: 30;cursor: pointer;top: -22px;}
+.post-gallery .swiper-button-next{position: absolute;width: 24px;height: 42px;background: url(../images/post/swiper-next.png) no-repeat center center;right: 0;z-index: 30;cursor: pointer;top: -22px;}
+
 .post-gallery .keyword{position: absolute;right: 0;top: 550px;}
 .post-gallery .keyword .link{font-size: 16px;line-height: 1.5;color: #ffffff;text-decoration: underline;margin-right: 10px;vertical-align: middle;display: block;text-align: right;}
 .post-gallery .filter {position: absolute;bottom: -53px;left: 280px;width: auto;}
@@ -403,7 +434,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 .post-gallery .selectbox label {position: absolute;top: 1px;left: 5px;padding: 10px 10px;z-index: -1;font-size: 24px;color: #fff;font-family: inherit;font-weight: bold;}
 .post-gallery .selectbox.date label{color : #666;font-weight: normal;text-align: center;}
 .post-gallery .selectbox select {width: 100%;height: 50px;line-height: normal;font-family: inherit;padding: 0px 10px;border: 0;opacity: 0;filter:alpha(opacity=0);-webkit-appearance: none;-moz-appearance: none;appearance: none;}
-.post-gallery-more{vertical-align: bottom;overflow: auto;}
+.post-gallery-more{vertical-align: bottom;overflow: auto;position: fixed;bottom: 34px;}
 .post-gallery-more .btn-more {background: none;/* float: left; */width: 300px;text-align: left;padding: 0;vertical-align: bottom;display: inline-block;}
 .post-gallery-more .btn-more .icon{background: url(../images/post/btn-more.png);display: inline-block;width: 80px;height: 80px;background-repeat: no-repeat;background-position: center center;border-radius: 50%;border: 1px solid #414141;}
 .post-gallery-more .btn-more .text{line-height: 80px;vertical-align: top;display: inline-block;color: #666;font-size: 18px;margin-left: 10px;text-decoration: underline;}
@@ -418,26 +449,70 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 
 #program-detail {width: 100%;}
 #program-detail .row{padding: 0;}
-#program-detail .visual-summary{height: 440px;background: #f5f5f5;width: 100%;padding: 40px 120px;box-sizing: border-box;position: relative;}
+#program-detail .visual-summary{height: auto;background: #f5f5f5;width: 100%;padding: 40px 120px;box-sizing: border-box;position: relative;overflow: auto;padding-bottom: 120px;}
 #program-detail .visual-summary .image-area{float: left;}
 #program-detail .visual-summary .image-area .image{height: 360px;width: auto;}
-#program-detail .visual-summary .info-area{position: absolute;right: 120px;top: 40px;text-align: right;}
+#program-detail .visual-summary .info-area{display: block;text-align: right;width: 100%;}
 #program-detail .visual-summary .info-area .category{color: #544297;font-size: 16px;display: block;text-align: right;margin-bottom: 25px;}
 #program-detail .visual-summary .info-area .title{font-size: 33px;color: #333333;text-align: right;display: block;margin-bottom: 20px;}
-#program-detail .visual-summary .info-area .desc{font-size: 16px;line-height: 22px;color: #666;line-height: 22px;}
-#program-detail .visual-summary .info-area .desc em{color: #544297;}
+#program-detail .visual-summary .info-area .desc{font-size: 16px;color: #666;line-height: 25px;}
+#program-detail .visual-summary .info-area .seller{font-weight: bold;font-size: 16px;color: #666;line-height: 25px; }
+#program-detail .visual-summary .info-area .desc em{color: #544297; }
+#program-detail .visual-summary .share-area{display: block;overflow: auto;text-align: right;margin-top: 20px;width: auto;float: right;}
+#program-detail .visual-summary .share-area li{display: inline-block;margin-left: 20px;}
+#program-detail .visual-summary .share-area .link{height: 40px;width: 40px;display: inline-block;}
+#program-detail .visual-summary .share-area .link.facebook{background: url("../images/common/share-facebook-bg.png") no-repeat center center;background-size: auto 40px;}
+#program-detail .visual-summary .share-area .link.twitter{background: url("../images/common/share-twitter-bg.png") no-repeat center center;background-size: auto 40px;}
+#program-detail .visual-summary .share-area .link.instargram{background: url("../images/common/share-instargram.png") no-repeat center center; background-size: auto 20px}
 #program-detail .visual-summary .button-area{position: absolute;bottom: 40px;right: 120px;}
-#program-detail .visual-summary .button-area .btn-minor{display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;}
-#program-detail .visual-summary .button-area .btn-major{display: inline-block;height: 50px;background: #a080cf;color: #fff;padding: 15px 10px 15px 50px;}
-#program-detail .visual-detail{position: relative;height: calc(100vh - 440px);width: calc(100% - 240px);margin: 0 auto;overflow: hidden;}
+#program-detail .visual-summary .button-area .btn-minor{display: inline-block;height: 50px;background: #fff;color: #544297;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;font-size: 16px;}
+#program-detail .visual-summary .button-area .btn-major{display: inline-block;height: 50px;background: #a080cf;color: #fff;padding: 15px 10px 15px 50px;font-size: 16px;border: 1px solid #a080cf;}
+#program-detail .visual-summary .button-area .icon{vertical-align: top; margin-right: 4px}
+#program-detail .visual-detail {
+    position: relative;
+    /* height: calc(100vh - 440px); */
+    width: calc(100% - 240px);
+    margin: 0 auto;
+    /* overflow: hidden; */
+    padding-bottom: 40px;
+}
 #program-detail .visual-detail .float-text{height: 100%;overflow-y: auto;overflow-x: hidden;position: absolute;right: 0px;width: 60%;padding: 40px 0;box-sizing: border-box;text-align: right;}
 #program-detail .visual-detail .float-text .text-decoration{position: relative;padding-top: 40px;width: 100%;display: inline-block;z-index: 10;}
 #program-detail .visual-detail .float-text .text-decoration .seller{font-size: 16px;color: #fff;background: #544297;padding: 2px 4px;position: absolute;right: 0;top: 4px;}
 #program-detail .visual-detail .float-text .text-decoration .cont{color: #999999;font-size: 16px;line-height: 32px;display: inline;background: #fff;padding: 2px 4px;}
 #program-detail .visual-detail .float-text::-webkit-scrollbar {display:none;}
 #program-detail .visual-detail .float-editor::-webkit-scrollbar {display:none;}
-#program-detail .visual-detail .float-editor{height: 100%;overflow-y: auto;overflow-x: hidden;text-align: left;position: absolute;left: 0px;width: 70%;padding-top: 40px;padding-bottom: 40px;box-sizing: border-box;}
+#program-detail .visual-detail .float-editor {text-align: left;width: 100%;padding-top: 40px;padding-bottom: 40px;box-sizing: border-box;}
 #program-detail .visual-detail .float-editor .image{display : block;margin-bottom:20px;}
+#program-detail .visual-detail .notice-refund{margin-top: 40px;  text-align: right;display: block;}
+#program-detail .visual-detail .notice-refund strong{font-size: 16px;color: #544297;display: block;padding-bottom: 20px;margin-bottom: 20px;border-bottom: 2px solid #666;}
+#program-detail .visual-detail .notice-refund li{font-size: 16px;line-height: 25px;color: #666;}
+#program-detail .visual-detail .sns-api{margin-top: 40px; width:100%;border-top:1px solid #ccc;}
+#program-detail .visual-detail .map-api{margin-top: 40px; text-align: right;display: block;}
+#program-detail .visual-detail .map-api strong{font-size: 16px;color: #544297;display: block;padding-bottom: 20px;margin-bottom: 20px;border-bottom: 2px solid #666;}
+#program-detail .visual-detail .map-api .located{font-size: 16px;color: #666; margin-top:10px; display: block}
+
+#program-complete {padding: 40px 120px;text-align: right;min-width: 880px;overflow-x: auto;width: 100%;box-sizing: border-box;}
+#program-complete .title {font-size: 40px;line-height: 50px;color: #333;margin-bottom: 110px;}
+#program-complete .program-form {max-width: 360px;margin: 0;display: inline-block;}
+#program-complete .program-form .form-group{margin-bottom: 40px;}
+#program-complete .program-form .form-group label{font-size: 14px;line-height: 22px;color: #544297;margin-bottom: 20px;}
+#program-complete .program-form .form-group span{display: block;border-bottom: 2px solid #666;font-weight: bold;margin-bottom: 10px;margin-top: 20px;padding-bottom: 10px;}
+#program-complete .program-form .form-group .form-control{width: 360px;height: 40px;line-height: 22px;padding: 4px 0px;box-sizing: border-box;border: 0;text-align: right;font-size: 16px;color: #666;}
+#program-complete .program-form .form-group .form-control[type="password"]{font-family: Arial}
+#program-complete .program-form .form-group textarea{height: 120px !important;text-align: left;padding: 0;}
+#program-complete .button-area .btn-minor {display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;}
+
+
+#mypage .mypage-form {max-width: 360px;margin: 0;display: inline-block;}
+#mypage .mypage-form .form-group{margin-bottom: 20px;}
+#mypage .mypage-form .division{border-top: 1px dotted #eee;margin-top: 40px;padding-top: 40px;}
+#mypage .mypage-form .read-area .form-group label{font-size: 14px;line-height: 22px;color: #544297;margin-bottom: 20px;}
+#mypage .mypage-form .read-area .form-group span{display: block;border-bottom: 2px solid #666;padding-bottom: 15px;font-weight: bold;}
+#mypage .mypage-form .read-area .form-group .form-control{width: 360px;border: 1px solid #ccc;height: 40px;line-height: 40px;padding: 4px 0px;box-sizing: border-box;color: #544297;border: 0;text-align: right;font-size: 16px;color: #333333;}
+#mypage .mypage-form .read-area .form-group .form-control[type="password"]{font-family: Arial}
+#mypage .mypage-form .read-area .form-group textarea{height: 120px !important;text-align: left;padding: 0;}
+
 
 
 #policy .policy-wrapper{max-width: 360px;display: block;max-width: none;}
@@ -450,6 +525,16 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #policy .policy-detail .group p{font-size: 13px;display: block;line-height: 20px;}
 #policy .button-area {margin-top: 40px;overflow: auto;}
 #policy .button-area button{display: inline-block;float: right;height: 50px;background: #544297;color: #fff;padding: 15px 20px 15px 60px;font-size: 16px;}
+
+
+#modal-01 .btn-close, #modal-02 .btn-close{right: 0;left: auto;top: 0;}
+#modal .modal-wrapper{max-width: 360px;display: block;max-width: none;padding: 40px 120px;}
+#modal .title{font-size: 14px;line-height: 50px;color: #666;margin-bottom: 40px;padding-bottom: 40px;border-bottom: 2px solid #666;line-height: 22px;text-align: right;}
+#modal .button-area {margin-top: 40px;overflow: auto;padding-left: 100px;text-align: right;}
+#modal .button-area .btn-minor{display: inline-block;height: 50px;background: #fff;color: #544297;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;font-size: 16px;}
+#modal .button-area .btn-major{display: inline-block;height: 50px;background: #544297;color: #fff;padding: 15px 20px 15px 60px;font-size: 16px;border: 1px dotted #544297;}
+#modal .form-group span{display: block;text-align: right;color: #544297;font-size: 16px;margin-bottom: 20px;}
+#modal .form-group .form-control{width: 100%;border: 1px solid #ccc;height: 40px;line-height: 40px;padding: 4px 10px;box-sizing: border-box;color: #544297;}
 
 
 
@@ -692,7 +777,8 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #program-detail .visual-summary .info-area .title{font-size: 20px;margin-bottom: 10px;}
     #program-detail .visual-summary .info-area .desc{font-size: 13px;line-height: 18px;}
     #program-detail .visual-summary .info-area .desc em{font-weight: bold;}
-    #program-detail .visual-summary .button-area{position: static;bottom: auto;right: auto;text-align: right;margin: 25px 0;}
+    #program-detail .visual-summary .share-area{  display: block;   float: none;    }
+    #program-detail .visual-summary .button-area{position: static;bottom: auto;right: auto;text-align: right;margin: 25px 0;width: 100%;display: block;}
     #program-detail .visual-summary .button-area .btn-minor{display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;}
     #program-detail .visual-summary .button-area .btn-major{display: inline-block;height: 50px;background: #a080cf;color: #fff;padding: 15px 10px 15px 50px;}
     #program-detail .visual-detail{position: relative;height: auto;width: 100%;margin: 0 auto;overflow: auto;}
