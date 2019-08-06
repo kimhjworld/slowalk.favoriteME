@@ -73,18 +73,21 @@
                         <img src="../images/@dummy/post08.png" class="image" />
                     </div>
                     <div class="info-area">
-                        <strong class="category">포럼</strong>
-                        <strong class="title">
-                            구글의 개발자 컨퍼런스는<br>
-                            그 어느 때보다 여러가지<br>
-                            생각을 남겼습니다.
-                        </strong>
-                        <p class="desc">일시 : 2019.05.15</p>
-                        <p class="desc">비용 : <em>56,000원</em></p>
+                        <strong class="category">EXHIBITION</strong>
+                        <strong class="title">'다시걷는 홍제'<br>낯설고 편안한 하루를<br>보내는 오래된 아파트</strong>
+                        <p class="desc">일시 : 2019.07.01~07.05 (10:00~19:00)</p>
+                        <p class="desc">비용 : <em>10000원</em></p>
+                        <p class="desc">장소 : 무중력지대 무악재 <br>(서울특별시 서대문구 통일로 358-1. 예술공간 무악파출소)</p>
+                        <p class="seller">판매자 : 서울창고</p>
                     </div>
+                    <ul class="share-area">
+                        <li><a href="#" class="link facebook"><span class="blind">facebook</span></a></li>
+                        <li><a href="#" class="link twitter"><span class="blind">twitter</span></a></li>
+                    </ul>
                     <div class="button-area">
-                        <button type="submit" class="btn-minor">장바구니</button>
-                        <button type="submit" class="btn-major">결제하기</button>
+                        <button type="submit" onclick="showPopup('#modal-02');" class="btn-minor"><img src="../images/common/icon-scrap.png" class="icon">스크랩</button>
+
+                        <button type="submit" onclick="showPopup('#modal-01');" class="btn-major">결제하기</button>
                     </div>
                 </div>
                 <div class="visual-detail">
@@ -102,6 +105,40 @@
                     <div class="float-editor">
                         <img src="../images/@dummy/editor.png" class="image" />
                     </div>
+
+                    <div class="map-api">
+                        <strong>지도</strong>
+                        <div style="background: #ccc">
+                            <br><br><br><br>
+                            지도 pi 호출  영역
+                            <br><br><br><br>
+                            여기에 데이터를 뿌려주세요
+                            <br><br><br><br><br>
+                        </div>
+                        <span class="located">서울 서대문구 통일로 581-1</span>
+                    </div>
+
+                    <div class="notice-refund">
+                        <strong>환불안내</strong>
+                        <ul>
+                            <li>[이용자의 취소]</li>
+                            <li>서비스는 이용일로부터 3일 전까지 환불이 가능합니다. (수수료 1.8%를 제외한 금액)</li>
+                            <li>이용일 기준 2일부터는 환불이 불가능합니다.</li>
+                            <li>본 서비스는 성인대상 상품 구입내용이며, 만약 구매를 미성년자가 진행하였을 경우, 법정대리인이 구매취소를 진행할 수 있습니다.</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="sns-api">
+                        <div style="background: #ccc">
+                            <br><br><br><br>
+                            sns 소셜 댓글 api 호출  영역
+                            <br><br><br><br>
+                            여기에 데이터를 뿌려주세요
+                            <br><br><br><br><br>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -113,6 +150,47 @@
 
 
 </div>
+
+<div class="popup-layer" id="modal-01">
+    <div class="pop-position">
+        <a href="javascript:hidePopup('#modal-01');" class="btn-close">닫기</a>
+        <div class="pop-content">
+            <div id="modal">
+                <div class="modal-wrapper">
+                    <h2 class="title">결제방법을 선택해주세요</h2>
+                    <div class="button-area">
+                        <button type="submit" class="btn-minor">신용카드</button>
+                        <button type="submit" class="btn-minor">계좌이체</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-layer" id="modal-02">
+    <div class="pop-position">
+        <a href="javascript:hidePopup('#modal-02');" class="btn-close">닫기</a>
+        <div class="pop-content">
+            <div id="modal">
+                <div class="modal-wrapper">
+                    <h2 class="title">프로그램 호스트가 행사의 안내를 위해 연락을 드릴 수 있습니다.<br>연락이 가능한 휴대전화 번호를 입력해 주세요</h2>
+                    <div class="form-group">
+                        <label>
+                            <span>휴대전화</span>
+                            <input  type="text" class="form-control" value=""/>
+                        </label>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit" class="btn-minor">취소</button>
+                        <button type="submit" class="btn-major">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Include JavaScript resources -->
 <script src="../js/jquery.1.8.3.min.js"></script>
