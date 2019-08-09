@@ -119,7 +119,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 /*gnb*/
 .gnb-wrapper{padding: 40px 80px;text-align: right;position: fixed;border-left: 1px solid #a080cf;height: 100%;box-sizing: border-box;width: inherit;}
 .gnb-wrapper .gnb-icon{display: inline-block;width: 103px;height: 71px;background: url(../images/common/gnb-icon.png) no-repeat center right;background-size: contain;margin-bottom: 50px;}
-.gnb-wrapper .gnb-icon:after{content:'';position: absolute;left: 15px;top: 50%;cursor: pointer;background: url(../images/common/gnb-menu.png) no-repeat center right;width: 30px;height: 30px;display: block;margin-top: -15px;z-index: 10;}
+.gnb-wrapper .gnb-icon:after{content:'';position: absolute;left: 15px;top: 50%;cursor: pointer;background: url(../images/common/gnb-menu-pc.png) no-repeat center right;width: 30px;height: 30px;display: block;margin-top: -15px;z-index: 10;}
 .gnb-wrapper .bottom{position: absolute;bottom: 40px;right: 80px;}
 .gnb-wrapper .bottom .copyright{font-size: 14px;color: #999999;line-height: 20px;display: block;text-align: right;margin-top: 30px;}
 .gnb-wrapper .main-menu{display: block;margin-bottom: 50px;text-align: right;}
@@ -158,6 +158,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 .card-large .image-area .more span{}
 .card-large .image-info{padding: 20px 0;display: block;width: 100%;}
 .card-large .image-info .text{font-size: 16px;line-height: 22px;color: #666;}
+.card-large .image-info .price{display: block;font-size: 16px;line-height: 22px;color: #544297; margin-top: 10px; font-weight: bold}
 
 .card-post{display: block;width: 100%;}
 .card-post .image-area{width: 100%;display: block;position: relative;}
@@ -347,12 +348,34 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 
 #program{width: 100%;display: block;padding: 0 60px;box-sizing: border-box;}
 #program .section-title{margin: 0 60px;margin-bottom: 30px;}
-#program .item-lists {display: block;width: 100%;}
-#program .item-lists li{float:left;width:33.3%;margin-bottom: 40px;padding: 0 60px;box-sizing: border-box;}
+#program .item-lists {display: block;width: 100%;font-size: 0;}
+#program .item-lists li{/* float:left; */width:33.3%;margin-bottom: 40px;padding: 0 60px;box-sizing: border-box;display: inline-block;vertical-align: top;}
 #program .tab{margin: 0 60px;margin-bottom: 30px;display: block;border-bottom: 1px solid #cccccc;padding-bottom: 15px;}
 #program .tab a{color: #666;font-size: 16px;line-height: 20px;}
 #program .tab a.active{color: #544297;}
 #program .tab span{font-size: 16px;line-height: 20px;color: #ccc;margin: 0 10px;}
+#program .search{margin: 0 60px;margin-bottom: 30px;display: block;border-bottom: 1px solid #544297;}
+#program .search .search-box{}
+#program .search .search-box{position: relative;width: 100%;position: relative;margin-bottom: 10px;}
+#program .search .search-box .form-control{width: 100%;border: 0;height: 40px;line-height: 40px;padding: 4px 0px;box-sizing: border-box;color: #544297; font-size: 16px}
+#program .search .search-box .form-control::placeholder{color:#544297; font-size: 16px}
+#program .search .search-box button{width: 22px;height: 22px;background: url(../images/program/icon-search.png) no-repeat center center;position: absolute;right: 0;bottom: 10px;}
+
+
+#program .program-pagination{margin-top: 40px;width: 100%;text-align: center;}
+#program .program-pagination ul{overflow: auto;text-align: center;display: inline-block;width: auto;}
+#program .program-pagination ul li{float: left; line-height: 30px; vertical-align: middle}
+#program .program-pagination ul li a{display: inline-block;color: #999999;font-size: 14px;line-height: 25px;margin: 0 10px; line-height: 30px; vertical-align: middle}
+#program .program-pagination ul li.active {}
+#program .program-pagination ul li.active a{color: #544297;border-bottom: 1px solid #544297;}
+#program .program-pagination ul li.prev a{background: url(../images/common/page-prev.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#program .program-pagination ul li.next a{background: url(../images/common/page-next.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#program .program-pagination ul li.first a{background: url(../images/common/page-first.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#program .program-pagination ul li.last a{background: url(../images/common/page-last.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+
+
+
+
 
 #post{background:#222;width: 100%;display: block;padding: 0 60px;box-sizing: border-box;min-height: 100vh;}
 #post-list{background:#222; width: 100%;display: block;padding: 0 60px;box-sizing: border-box;}
