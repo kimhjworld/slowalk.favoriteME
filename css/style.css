@@ -177,10 +177,10 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #main .card-post .image-area:hover .image{transform: scale(1.1);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);}
 #main .card-post .image-area:hover .text{text-decoration: underline}
 #main-post{background: transparent;margin: 0 120px;border-top: 1px solid #cccccc;padding-top: 40px;}
-#main-post .item-lists li{width: 50%;float: left;box-sizing: border-box;}
+#main-post .item-lists li{width: 50%; box-sizing: border-box;}
 #main-post .item-lists li:nth-child(even){padding-left: 60px;}
 #main-post .item-lists li:nth-child(even) .text{color:#fff}
-#main-post .item-lists li:nth-child(odd){padding-right: 60px;margin-bottom: 45px;}
+#main-post .item-lists li:nth-child(odd){padding-right: 60px;}
 
 #post .item-lists li{width: 50%;float: left;box-sizing: border-box;}
 #post .item-lists li:nth-child(even){padding-left: 60px;}
@@ -339,8 +339,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #mypage .mypage-scrap{ margin-right: -60px;  }
 #mypage .mypage-scrap .item-lists {display: block;width: 100%;}
 #mypage .mypage-scrap .item-lists li{float:left;width:33.3%;margin-bottom: 40px;padding: 0 60px;box-sizing: border-box;}
-#mypage .mypage-scrap .item-lists li:nth-child(3n){}
-#mypage .mypage-scrap .item-lists li:nth-child(3n-1){}
+
 
 #mypage .mypage-action{padding-top: 40px;text-align: right;display: block;width: 100%;}
 #mypage .mypage-action .btn-minor{display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;font-size: 16px;}
@@ -380,8 +379,9 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #post{background:#222;width: 100%;display: block;padding: 0 60px;box-sizing: border-box;min-height: 100vh;}
 #post-list{background:#222; width: 100%;display: block;padding: 0 60px;box-sizing: border-box;}
 #post-list .section-title{margin: 0 60px;margin-bottom: 30px;}
-#post-list .item-lists {display: block;width: 33.3%;float: left;}
-#post-list .item-lists li{float:left;width:100%;margin-bottom: 40px;padding: 0 60px;box-sizing: border-box;}
+#post-list .group-column {display: block;width:100%; }
+#post-list .item-lists {display: block; width:100%; font-size: 0}
+#post-list .item-lists li{float:left; display: inline-block;width: 33.3%;margin-bottom: 40px;padding: 0 60px;box-sizing: border-box;vertical-align: top;}
 #post-list .search{margin: 0 60px;border-bottom: 1px dotted #666; padding-bottom: 40px; margin-bottom: 40px;}
 #post-list .search .search-box{margin-bottom: 30px;position: relative;width: 340px;border-bottom: 1px solid #Fff;}
 #post-list .search .search-box .form-control{border: 0;height: 40px;line-height: 40px;background: transparent;width: 340px;color: #fff; padding-right: 20px; box-sizing: border-box}
@@ -403,7 +403,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #post-list .post-pagination{margin-top: 40px;width: 100%;text-align: center;}
 #post-list .post-pagination ul{overflow: hidden;text-align: center;display: inline-block;width: auto;}
 #post-list .post-pagination ul li{float: left; line-height: 30px; vertical-align: middle}
-#post-list .post-pagination ul li a{display: inline-block;color: #999999;font-size: 14px;line-height: 25px;margin: 0 10px; line-height: 30px; vertical-align: middle}
+#post-list .post-pagination ul li a{display: inline-block;color: #999999;font-size: 18px;line-height: 25px;margin: 0 10px;line-height: 30px;vertical-align: middle;}
 #post-list .post-pagination ul li.active {}
 #post-list .post-pagination ul li.active a{color: #fff;border-bottom: 1px solid #fff;}
 #post-list .post-pagination ul li.prev a{background: url(../images/post/page-prev.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
@@ -527,17 +527,6 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 #program-complete .button-area .btn-minor {display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;}
 
 
-#mypage .mypage-form {max-width: 360px;margin: 0;display: inline-block;}
-#mypage .mypage-form .form-group{margin-bottom: 20px;}
-#mypage .mypage-form .division{border-top: 1px dotted #eee;margin-top: 40px;padding-top: 40px;}
-#mypage .mypage-form .read-area .form-group label{font-size: 14px;line-height: 22px;color: #544297;margin-bottom: 20px;}
-#mypage .mypage-form .read-area .form-group span{display: block;border-bottom: 2px solid #666;padding-bottom: 15px;font-weight: bold;}
-#mypage .mypage-form .read-area .form-group .form-control{width: 360px;border: 1px solid #ccc;height: 40px;line-height: 40px;padding: 4px 0px;box-sizing: border-box;color: #544297;border: 0;text-align: right;font-size: 16px;color: #333333;}
-#mypage .mypage-form .read-area .form-group .form-control[type="password"]{font-family: Arial}
-#mypage .mypage-form .read-area .form-group textarea{height: 120px !important;text-align: left;padding: 0;}
-
-
-
 #policy .policy-wrapper{max-width: 360px;display: block;max-width: none;}
 #policy .title{font-size: 40px;line-height: 50px;color: #333;margin-bottom: 110px;}
 #policy .notice{background: #f5f5f5;border-top: 3px solid #544297;padding: 30px;width: auto;margin-bottom: 20px;line-height: 25px;}
@@ -566,19 +555,9 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 
 
     .popup-layer .pop-position{width: calc(100% - 40px);height: calc(100% - 40px);}
-    .popup-layer .btn-close{
-        top: 0;
-        left: 0;
-    }
-    #policy{
-        padding: 20px;
-        box-sizing: border-box;
-        margin: 0 auto;
-        width: 100%;
-        padding-bottom: 50px;
-        overflow: auto;
-        max-height: calc(100vh - 100px);
-    }
+    .popup-layer .btn-close{    top: 0;    left: 0;}
+
+    #policy{    padding: 20px;    box-sizing: border-box;    margin: 0 auto;    width: 100%;    padding-bottom: 50px;    overflow: auto;    max-height: calc(100vh - 100px);}
     #policy .policy-wrapper{max-width: none;display: block;}
     #policy .title{font-size: 20px;line-height: 24px;color: #333;margin-bottom: 20px;}
     #policy .notice{background: #f5f5f5;border-top: 3px solid #544297;padding: 10px;width: auto;margin-bottom: 10px;line-height: 14px;font-size: 11px;}
@@ -589,9 +568,6 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #policy .policy-detail .group p{font-size: 10px;display: block;line-height: 18px;}
     #policy .button-area {margin-top: 40px;overflow: auto;position: absolute;bottom: 0;left: 0;width: 100%;background: #fff;}
     #policy .button-area button{display: inline-block;float: none;height: 50px;background: #544297;color: #fff;padding: 15px 20px 15px 60px;font-size: 16px;}
-
-
-
 
     #wrapper{padding-right: 40px;}
     #content{}
@@ -652,6 +628,7 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     .card-large .image-area .more:before{background-size: 12px auto;width: 12px;height: 12px;}
     .card-large .image-info{padding: 5px 0;}
     .card-large .image-info .text{font-size: 13px;line-height: 16px;}
+    .card-large .image-info .price{font-size: 13px;line-height: 16px;}
 
     .card-post .image-area .more .text{font-size: 13px;line-height: 16px;transform: translateY(-50%);padding: 0 10px;}
     .card-post .image-area .more .writer{font-size: 8px;padding: 5px;letter-spacing: 2px;}
@@ -663,12 +640,12 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #main .row.col-2{position:relative;padding-bottom: 0;}
     #main .row.col-2:before{display:none}
 
-    #main-post{padding-top: 0;margin: 0;border-top: 0;}
+    #main-post{padding-top: 0;margin: 0;border-top: 0;height: auto !important;}
     #main-post .section-title{    margin: 0 20px;   border-top: 1px solid #ccc;    padding-top: 20px;  }
     #main-post .item-lists li:nth-child(even){padding-left: 10px;}
-    #main-post .item-lists li:nth-child(odd){padding-right: 10px;margin-bottom: 20px;}
-    #main-post .item-lists {width: 100%;padding: 20px;box-sizing: border-box;overflow: auto;}
-    #main-post .item-lists li{float:left;width: 50%;margin-bottom: 0;padding: 0;box-sizing: border-box;}
+    #main-post .item-lists li:nth-child(odd){padding-right: 10px;}
+    #main-post .item-lists {width: 100%;padding: 20px;box-sizing: border-box;font-size: 0;}
+    #main-post .item-lists li{float: none;width: 50%;margin-bottom: 0;padding: 0;box-sizing: border-box;display: inline-block;vertical-align: top;position: static !important;margin-bottom: 20px;}
 
     #member .member-wrapper{max-width: 100%;display: block;}
     #member .title{font-size: 20px;line-height: 25px;margin-bottom: 50px;}
@@ -704,8 +681,8 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #mypage .mypage-table .list li.table-header{display: none;}
     #mypage .mypage-table .list li.table-body{min-height: auto;padding: 15px 0;}
     #mypage .mypage-table .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
-    #mypage .mypage-table .list li .text{font-size: 13px;line-height: 16px;vertical-align: top;}
-    #mypage .mypage-table .list li .area-title .text{ line-height: 1; }
+    #mypage .mypage-table .list li .text{font-size: 13px;line-height: 16px;vertical-align: top;display: inline-block;}
+    #mypage .mypage-table .list li .area-title .text{line-height: 1.5;overflow: visible;display: inline-block;white-space: inherit;}
     #mypage .mypage-table .list li .area-seller .text{font-weight: bold;}
     #mypage .mypage-table .list li .area-cost .text{color: #544297;font-weight: bold;}
     #mypage .mypage-table .list li .text em{color: #544297;}
@@ -713,28 +690,125 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #mypage .mypage-table .list li .area-date{float: none;width: 100%;text-align: right;padding-right: 0;vertical-align: top;margin-bottom: 5px;}
     #mypage .mypage-table .list li .area-title{float: none;width: 100%;padding-left: 85px;text-align: right;min-height: 45px;}
     #mypage .mypage-table .list li .area-seller{float: none;width: 100%;padding: 0;text-align: right;margin-bottom: 10px;}
-    #mypage .mypage-table .list li .area-cost{float: none;width: auto;padding: 0;display: inline-block;line-height: 15px;vertical-align: top;}
-    #mypage .mypage-table .list li .area-status{float: none;width: auto;padding: 0;display: inline-block;line-height: 16px;vertical-align: top;}
-    #mypage .mypage-table .list li .area-status:before{content:'/';color: #cccccc;font-size: 13px;line-height: 16px;vertical-align: top;}
+    #mypage .mypage-table .list li .area-cost{float: none;width: auto;padding: 0;display: inline-block;line-height: 15px;vertical-align: top;display: block;height: auto;}
+    #mypage .mypage-table .list li .area-status{float: none;width: auto;padding: 0;display: inline-block;line-height: 16px;vertical-align: top;display: block;margin-top: 10px;height: auto;}
+    #mypage .mypage-table .list li .area-status:before{content:'/';color: #cccccc;font-size: 13px;line-height: 16px;vertical-align: top;display: none;}
     #mypage .mypage-action{padding-top: 30px;width: 100%;}
     #mypage .mypage-action .btn-minor{display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 30px;border: 1px dotted #a080cf;font-size: 13px;}
     #mypage .mypage-action .btn-major{display: inline-block;height: 50px;background: #a080cf;color: #fff;padding: 15px 10px 15px 30px;font-size: 13px;}
 
+
+
+    #mypage .mypage-pagination{margin-top: 40px;width: 100%;text-align: center;position: relative;}
+    #mypage .mypage-pagination ul{overflow: hidden;text-align: center;display: inline-block;width: 400;}
+    #mypage .mypage-pagination ul li{display:none}
+    #mypage .mypage-pagination ul li:nth-child(2){display:block}
+    #mypage .mypage-pagination ul li:nth-child(3){display:block}
+    #mypage .mypage-pagination ul li:nth-child(4){display:block}
+    #mypage .mypage-pagination ul li:nth-child(5){display:block}
+    #mypage .mypage-pagination ul li:nth-child(6){display:block}
+    #mypage .mypage-pagination ul li.next{display:block}
+    #mypage .mypage-pagination ul li.first{display:none}
+    #mypage .mypage-pagination ul li.last{display:none}
+
+    #mypage .lnb{display: block;overflow: auto;height: auto;margin-bottom: 40px;text-align: right;}
+    #mypage .lnb li{display: inline-block; }
+    #mypage .lnb li:before{content: '/';margin: 0 7px;color: #cccccc;font-size: 16px;}
+    #mypage .lnb li:first-child:before{display: none;}
+    #mypage .lnb li a{display: inline-block;color: #544297;font-weight: bold;}
+    #mypage .lnb li.active a{background: #544297;color: #fff;padding: 0 2px;}
+    #mypage .lnb li a .text{font-size: 17px;}
+
+
+    #mypage .mypage-form {max-width: none;margin: 0;display: inline-block;width: 100%;}
+    #mypage .mypage-form .form-group{margin-bottom: 20px;}
+    #mypage .mypage-form .form-group label{font-size: 14px;line-height: 22px;color: #544297;margin-bottom: 20px;}
+    #mypage .mypage-form .form-group span{display: block;border-bottom: 2px solid #666;font-weight: bold;margin-bottom: 5px;margin-top: 5px;padding-bottom: 5px;font-size: 13px;}
+    #mypage .mypage-form .form-group .form-control{width: 100% !important;line-height: 22px !important;padding: 4px 0px !important;box-sizing: border-box !important;border: 0 !important;text-align: right !important;color: #666 !important;font-size: 13px !important;display: block !important;height: auto !important;}
+    #mypage .mypage-form .form-group .form-control[type="password"]{font-family: Arial}
+    #mypage .mypage-form .form-group textarea.form-control{height: 120px !important;text-align: left;padding: 0;border: 1px solid #ccc !important;}
+    #mypage .guide{}
+    #mypage .guide p{font-size: 12px}
+
+
+    #mypage .util{overflow: auto;height: auto;display: block;margin-bottom: 20px;}
+    #mypage .util .left{float: none;display: block;width: 100%;margin-bottom: 20px;}
+    #mypage .util .right{float: none;display: block;width: 100%;}
+    #mypage .util .right .selectbox{width: 100% !important;}
+    #mypage .util .text{font-size: 14px;color:#544297;margin-right: 10px;font-weight: bold;display: block;text-align: left;margin-bottom: 10px;}
+
+
+    #mypage .selectbox {position: relative;width: 100%;display: inline-block;border: 1px solid #544297;box-sizing: border-box;}
+    #mypage .selectbox:before {content: "";position: absolute;top: 50%;right: 15px;width: 0;height: 0;margin-top: -1px;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #544297;}
+    #mypage .selectbox.date:before{border-top: 5px solid #666;}
+    #mypage .selectbox label {position: absolute;top: 1px;left: 5px;padding: 0px 10px;z-index: -1;font-size: 14px;color: #544297;font-family: inherit;font-weight: bold;line-height: 30px;}
+    #mypage .selectbox.date label{color : #666;font-weight: normal;text-align: center;}
+    #mypage .selectbox select {width: 100%;height: 30px;line-height: normal;font-family: inherit;padding: 0px 10px;border: 0;opacity: 0;filter:alpha(opacity=0);-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+
+    #mypage .total{margin:40px 0; text-align: left}
+    #mypage .total .label:first-child{font-size: 13px;color: #666666;display: block;}
+    #mypage .total .label{font-size: 20px;color: #544297;display: inline-block;}
+    #mypage .total .value{font-size: 20px;color: #544297;display: inline-block;}
+    #mypage .mypage-host{display: block;width: 100%;}
+    #mypage .mypage-host .list{display: block;width: 100%;border-top: 2px solid #544297;}
+    #mypage .mypage-host .list li.table-header{display: none;}
+    #mypage .mypage-host .list li.table-body{display: block;width: 100%;overflow: auto;padding: 10px 0;min-height: 70px;border-bottom: 1px solid #ddd;}
+    #mypage .mypage-host .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
+    #mypage .mypage-host .list li .text{font-size: 16px;color: #666;vertical-align: middle;line-height: 1.5;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+    #mypage .mypage-host .list li .text-purple{color: #544297; font-weight: bold}
+    #mypage .mypage-host .list li .area-number .text{color: #999;}
+    #mypage .mypage-host .list li .area-date .text{color: #999;}
+    #mypage .mypage-host .list li .area-title .text{color: #544297;font-weight:bold;vertical-align: middle;line-height: 1.5;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+    #mypage .mypage-host .list li .area-seller .text{color: #666;}
+    #mypage .mypage-host .list li .area-cost .text{color: #544297;font-weight: bold;}
+    #mypage .mypage-host .list li .area-linkdin .text{line-height: 30px;text-align: left;}
+    #mypage .mypage-host .list li .text em{color: #544297;vertical-align: middle;line-height: 1.5;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+    #mypage .mypage-host .list li .image{position: absolute;top: 0;left: 0;}
+    #mypage .mypage-host .list li .area-number{display: none;}
+    #mypage .mypage-host .list li .area-date{float: none;width: 100%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;display: block;}
+    #mypage .mypage-host .list li .area-title{float: none;width: 100%;position: relative;box-sizing: border-box;text-align: left;display: block;padding: 0;}
+    #mypage .mypage-host .list li .area-linkdin{float: none;width: 100%;padding: 0;box-sizing: border-box;text-align: left;display: block;}
+    #mypage .mypage-host .list li .area-cost{float: none;width: 100%;text-align: left;box-sizing: border-box;display: block;padding: 0;}
+    #mypage .mypage-host .list li .area-pay{float: none;width: 100%;padding: 0;box-sizing: border-box;display: block;text-align: left;}
+    #mypage .mypage-host .list li .area-status{float: none;width: 100%;padding: 0;box-sizing: border-box;display: block;text-align: left;}
+
+    #mypage .mypage-scrap{margin-right: 0;}
+    #mypage .mypage-scrap .item-lists {display: block;width: 100%;overflow: auto;}
+    #mypage .mypage-scrap .item-lists li{float:left;width: 50%;margin-bottom: 20px;padding: 0;box-sizing: border-box;}
+    #mypage .mypage-scrap .item-lists li:nth-child(2n-1){
+        padding-right: 10px;
+    }
+    #mypage .mypage-scrap .item-lists li:nth-child(2n){
+        padding-left: 10px;
+    }
+
+
     #post{padding: 0;min-height: 100vh;}
     #post-list{width: 100%;padding: 0;min-height: 100vh;}
     #post-list .section-title{margin: 0 60px;margin-bottom: 30px;}
-    #post-list .group-column {overflow: auto;padding: 0 10px;margin-top: 10px;}
-    #post-list .item-lists {width: 50%;padding: 10px;box-sizing: border-box;}
-    #post-list .item-lists li{float:left;width:100%;margin-bottom: 0;padding: 0;box-sizing: border-box;}
+    #post-list .group-column {overflow: auto;padding: 0 10px;margin-top: 10px;width: 100%;box-sizing: border-box;}
+    #post-list .item-lists {width: auto;padding: 0;box-sizing: border-box;overflow: auto;height: auto;}
+    #post-list .item-lists li{float: none;width: 50%;margin-bottom: 10px;padding: 0 10px;box-sizing: border-box;position: static !important;display: inline-block;vertical-align: top;}
     #post-list .search{margin: 0;border-bottom: 1px dotted #666;padding-bottom: 20px;margin:  0 20px;}
     #post-list .search .search-box{margin-bottom: 20px;width: 100%;}
     #post-list .search .search-box .form-control{height: 40px;line-height: 40px;background: transparent;width: 100%;box-sizing: border-box;font-size: 13px;}
     #post-list .search .search-box .form-control::placeholder{color:#fff}
     #post-list .search .search-box button{width: 22px;height: 22px;background: url(../images/post/icon-search.png) no-repeat center center;position: absolute;right: 0;bottom: 10px;}
     #post-list .search .keyword .link{font-size: 13px;margin-right: 5px;}
-    #post-list .search .keyword .link.highlight{font-size: 18px;}
-    #post-list .search .keyword .link.zoom{font-size: 18px;}
     #post-list .card-post .image-area .more .text{padding:0 10px;}
+
+    #post-list .post-pagination{margin-top: 40px;width: 100%;text-align: center;position: relative;}
+    #post-list .post-pagination ul{overflow: hidden;text-align: center;display: inline-block;width: 400;}
+    #post-list .post-pagination ul li{display:none}
+    #post-list .post-pagination ul li:nth-child(2){display:block}
+    #post-list .post-pagination ul li:nth-child(3){display:block}
+    #post-list .post-pagination ul li:nth-child(4){display:block}
+    #post-list .post-pagination ul li:nth-child(5){display:block}
+    #post-list .post-pagination ul li:nth-child(6){display:block}
+    #post-list .post-pagination ul li.next{display:block}
+    #post-list .post-pagination ul li.first{display:none}
+    #post-list .post-pagination ul li.last{display:none}
+
 
     #post-detail{ display: block;}
     #post-detail .title{font-size: 20px;line-height: 25px;padding: 0 20px;margin-bottom: 30px;}
@@ -751,18 +825,20 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #post-detail .item-lists {display: block;width: 100%;overflow: auto;}
     #post-detail .item-lists li{float:left;width: 50%;margin-bottom: 0;padding: 0 10px;box-sizing: border-box;}
     #post-detail .card-post .image-area .more .text{padding:0 10px;}
+    #post-detail .sns-api{  margin: 20px;}
 
     .post-gallery{padding: 0 20px;}
-    .post-gallery .card-post{padding-left: 0;height: auto;width: 100%;margin-bottom: 0;}
-    .post-gallery .card-post .image-area{width: 100%;height: auto;float: none;}
+    .post-gallery .card-post{padding-left: 0;height: auto;width: 100%;margin-bottom: 0;padding: 0;overflow: visible;}
+    .post-gallery .card-post .image-area{width: 100%;height: auto;float: none;overflow: visible;}
     .post-gallery .card-post .image-area .more{position: relative;display: block;width: 100%;padding: 0;}
-    .post-gallery .card-post .image-area .more .image{height: auto;width: 100%;}
-    .post-gallery .card-post .image-area .more .text{font-size: 20px;line-height: 26px;right: 0;left: auto;top: 50%;display: block;padding: 0 20px;}
-    .post-gallery .swiper-pagination{position: static;color: #666666;font-size: 20px;font-weight: normal;height: 90px;}
+    .post-gallery .card-post .image-area .more .image{height: auto;width: 100%;max-width: none;}
+    .post-gallery .card-post .image-area .more .text{font-size: 20px;line-height: 26px;right: 0;left: auto;top: 46%;display: block;padding: 0 20px;bottom: auto;position: absolute;}
+    .post-gallery .card-post .image-area .more .content{font-size: 14px;line-height: 22px;position: static;display: block;color: #fff;padding: 20px;width: 100%;margin-top: 0;box-sizing: border-box;position: absolute;margin-top: 60px;padding-top: 0;top: 50%;}
+    .post-gallery .swiper-pagination{position: static;color: #666666;font-size: 20px;font-weight: normal;height: 110px;}
     .post-gallery .swiper-pagination .swiper-pagination-current{font-size: 36px;display: inline-block;color: #fff;}
     .post-gallery .swiper-pagination .swiper-pagination-total{color: #666666;font-size: 20px;font-weight: normal;display: inline-block;}
-    .post-gallery .swiper-button-group{top: 0;left: 0;background: none;height: 50px;width: 100%;padding-right: 40px;box-sizing: border-box;}
-    .post-gallery .swiper-button-next{height: 50px;right: auto;left: 0;background: url(../images/post/btn-next.png) no-repeat right bottom;background-size: auto 21px;display: block;position: static;}
+    .post-gallery .swiper-button-group{top: 56px;left: 0;background: none;height: 50px;width: 100%;padding-right: 40px;box-sizing: border-box;}
+    .post-gallery .swiper-button-next{background-size: auto 21px;display: block;position: absolute;width: 24px;height: 42px;background: url(../images/post/swiper-next.png) no-repeat center center;right: 0;z-index: 30;cursor: pointer;top: -22px;left: auto;}
     .post-gallery .keyword{position: absolute;top: auto;bottom: 20px;right: 20px;}
     .post-gallery .keyword .link{font-size: 11px;line-height: 20px;text-decoration: underline;margin-right: 0;}
     .post-gallery .filter {position: static;bottom: auto;left: auto;width: 100%;display: block;}
@@ -770,8 +846,8 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     .post-gallery .selectbox:before {top: 48%;right: 15px;border-left: 3px solid transparent;border-right: 3px solid transparent;border-top: 3px solid #fff;}
     .post-gallery .selectbox label {padding: 10px 0px;font-size: 15px;color: #fff;font-family: inherit;font-weight: bold;}
     .post-gallery .selectbox select {width: 100%;height: 39px;line-height: normal;font-family: inherit;padding: 0px 10px;border: 0;opacity: 0;filter:alpha(opacity=0);-webkit-appearance: none;-moz-appearance: none;appearance: none;}
-    .post-gallery-more{padding: 0 20px;position: relative;height: auto;padding-bottom: 50px;}
-    .post-gallery-more .btn-more {background: none;float: none;width: auto;text-align: left;padding: 0;vertical-align: bottom;display: inline-block;position: absolute;bottom: 0;}
+    .post-gallery-more{padding: 0 20px;position: static;height: auto;padding-bottom: 0;margin-top: 0;}
+    .post-gallery-more .btn-more {background: none;float: none;width: auto;text-align: left;padding: 0;vertical-align: bottom;display: inline-block;position: static;bottom: 0;}
     .post-gallery-more .btn-more .icon{width: 40px;height: 40px;background-size: 20px auto;}
     .post-gallery-more .btn-more .text{line-height: 40px;font-size: 12px;margin-left: 5px;text-decoration: underline;}
     .post-gallery-more .btn-more:hover .icon{border-color:#fff}
@@ -782,13 +858,26 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     .post-gallery-more .thumbnail li a{ display: block; margin-right: 10px;}
     .post-gallery-more .thumbnail li .image{width: 100px;height: auto;}
 
+
+
+
     #program{padding: 0;}
     #program .section-title{margin: 0 20px;margin-bottom: 10px;}
     #program .item-lists {padding: 0 10px;box-sizing: border-box;overflow: auto;}
     #program .item-lists li{width: 50%;margin-bottom: 20px;padding: 0 10px;}
     #program .tab{margin: 0 20px;margin-bottom: 20px;padding-bottom: 10px;}
-    #program .tab a{font-size: 12px;line-height: 16px;}
+    #program .tab a{font-size: 14px;line-height: 16px;}
     #program .tab span{font-size: 12px;line-height: 16px;margin: 0 5px;}
+
+    #program .search{display: block;border-bottom: 1px solid #544297;margin: 0 20px;margin-bottom: 20px;padding-bottom: 5px;}
+    #program .search .search-box{position: relative;width: 100%;position: relative;margin-bottom: 0;}
+    #program .search .search-box .form-control{width: 100%;border: 0;height: 30px;line-height: 30px;padding: 4px 0px;box-sizing: border-box;color: #544297;font-size: 14px;}
+    #program .search .search-box .form-control::placeholder{color:#544297; font-size: 16px}
+    #program .search .search-box button{width: 22px;height: 22px;background: url(../images/program/icon-search.png) no-repeat center center;position: absolute;right: 0;bottom: 4px;}
+
+
+
+
 
     #program-detail {width: 100%;}
     #program-detail .row{padding: 0;}
@@ -814,6 +903,40 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #program-detail .visual-detail .float-editor{height: 100%;overflow-y: auto;overflow-x: hidden;text-align: left;position: static;left: auto;width: auto;padding: 0 20px;margin-top: 40px;}
     #program-detail .visual-detail .float-editor .image{display : block;margin-bottom: 0px;width: 100%;}
 
+    #program-detail .visual-detail .notice-refund{margin-top: 40px;text-align: right;display: block;width: auto;padding: 0 20px;margin-top: 40px;}
+    #program-detail .visual-detail .notice-refund strong{font-size: 14px;color: #544297;display: block;padding-bottom: 10px;margin-bottom: 10px;border-bottom: 2px solid #666;}
+    #program-detail .visual-detail .notice-refund li{font-size: 14px;line-height: 25px;color: #666;}
+    #program-detail .visual-detail .sns-api{margin-top: 40px;width:100%;border-top:1px solid #ccc;width: auto;margin: 20px;}
+    #program-detail .visual-detail .map-api{margin-top: 20px;text-align: right;display: block;width: auto;padding: 0 20px;margin-top: 40px;}
+    #program-detail .visual-detail .map-api strong{font-size: 14px;color: #544297;display: block;padding-bottom: 10px;margin-bottom: 10px;border-bottom: 2px solid #666;}
+    #program-detail .visual-detail .map-api .located{font-size: 14px;color: #666;margin-top:10px;display: block;}
+
+
+
+    #program-complete {padding: 0;text-align: right;min-width: auto;overflow-x: auto;width: 100%;box-sizing: border-box;padding: 20px;}
+    #program-complete .title {font-size: 20px;color: #333;margin-bottom: 50px;}
+    #program-complete .program-form {max-width: none;margin: 0;display: inline-block;width: 100%;}
+    #program-complete .program-form .form-group{margin-bottom: 20px;}
+    #program-complete .program-form .form-group label{font-size: 14px;line-height: 22px;color: #544297;margin-bottom: 20px;}
+    #program-complete .program-form .form-group span{display: block;border-bottom: 2px solid #666;font-weight: bold;margin-bottom: 5px;margin-top: 5px;padding-bottom: 5px;font-size: 13px;}
+    #program-complete .program-form .form-group .form-control{width: 100%;line-height: 22px;padding: 4px 0px;box-sizing: border-box;border: 0;text-align: right;color: #666;font-size: 13px;display: block;height: auto;}
+    #program-complete .program-form .form-group .form-control[type="password"]{font-family: Arial}
+    #program-complete .program-form .form-group textarea{height: 120px !important;text-align: left;padding: 0;}
+    #program-complete .button-area .btn-minor {display: inline-block;height: 50px;background: #fff;color: #a080cf;padding: 15px 10px 15px 50px;border: 1px dotted #a080cf;}
+
+
+
+    #program .program-pagination{margin-top: 40px;width: 100%;text-align: center;position: relative;}
+    #program .program-pagination ul{overflow: hidden;text-align: center;display: inline-block;width: 400;}
+    #program .program-pagination ul li{display:none}
+    #program .program-pagination ul li:nth-child(2){display:block}
+    #program .program-pagination ul li:nth-child(3){display:block}
+    #program .program-pagination ul li:nth-child(4){display:block}
+    #program .program-pagination ul li:nth-child(5){display:block}
+    #program .program-pagination ul li:nth-child(6){display:block}
+    #program .program-pagination ul li.next{display:block}
+    #program .program-pagination ul li.first{display:none}
+    #program .program-pagination ul li.last{display:none}
 
 
 }

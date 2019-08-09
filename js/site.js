@@ -2,6 +2,30 @@
 
 $(document).ready(function () {
 
+    if( $('#main-post .item-lists').length > 0){
+        /*masonry*/
+        $('#main-post').masonry({
+            // options
+            itemSelector: '.item-lists li',
+            columnWidth: '.item-lists li',
+            percentPosition: true
+        });
+    }
+
+    if( $('#post-list .group-column').length > 0){
+        /*masonry*/
+        $('#post-list .group-column').masonry({
+            // options
+            itemSelector: '.item-lists li',
+            columnWidth: '.item-lists li',
+            percentPosition: true
+        });
+    }
+
+
+
+
+
 
     $("#gnb .btn-gnb-folder, .gnb-icon").on("click",function() {
         if ($("#wrapper").hasClass("gnb-folder")) {
