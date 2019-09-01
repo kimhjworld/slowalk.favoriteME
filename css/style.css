@@ -551,6 +551,49 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
 
 
 
+
+#notice {padding: 40px 120px;text-align: right;min-width: 880px;overflow-x: auto;width: 100%;box-sizing: border-box;}
+#notice .title{font-size: 40px;line-height: 50px;color: #333;margin-bottom: 110px;}
+#notice .notice-list{display: block;width: 100%;}
+#notice .notice-list .list{display: block;width: 100%;}
+#notice .notice-list .list li.table-header{width: 100%;display: block;overflow: auto;border-bottom: 4px solid #544297;padding: 10px 0;}
+#notice .notice-list .list li.table-body{display: block;width: 100%;overflow: auto;padding: 10px 0;min-height: 70px;border-bottom: 1px solid #ddd;}
+#notice .notice-list .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
+#notice .notice-list .list li .text{font-size: 16px;color: #666;vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+#notice .notice-list .list li .text-purple{color: #544297; font-weight: bold}
+#notice .notice-list .list li .area-number .text{color: #999;}
+#notice .notice-list .list li .area-date .text{color: #999;}
+#notice .notice-list .list li .area-title .text{color: #333333; font-weight:bold; vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+#notice .notice-list .list li .text em{color: #544297;vertical-align: middle;line-height: 60px;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+#notice .notice-list .list li .image{position: absolute;top: 0;left: 0;}
+#notice .notice-list .list li .area-number{float: left;width: 7%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;}
+#notice .notice-list .list li .area-title{float: left;width: 63%;position: relative;box-sizing: border-box;padding-left: 70px;text-align: left;}
+#notice .notice-list .list li .area-date{float: left;width: 15%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;}
+#notice .notice-list .list li .area-attach{float: left;width: 15%;padding: 0 10px;box-sizing: border-box; text-align: center}
+#notice .notice-pagination{margin-top: 40px;width: 100%;text-align: center;}
+#notice .notice-pagination ul{overflow: auto;text-align: center;display: inline-block;width: auto;}
+#notice .notice-pagination ul li{float: left; line-height: 30px; vertical-align: middle}
+#notice .notice-pagination ul li a{display: inline-block;color: #999999;font-size: 14px;line-height: 25px;margin: 0 10px; line-height: 30px; vertical-align: middle}
+#notice .notice-pagination ul li.active {}
+#notice .notice-pagination ul li.active a{color: #544297;border-bottom: 1px solid #544297;}
+#notice .notice-pagination ul li.prev a{background: url(../images/common/page-prev.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#notice .notice-pagination ul li.next a{background: url(../images/common/page-next.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#notice .notice-pagination ul li.first a{background: url(../images/common/page-first.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+#notice .notice-pagination ul li.last a{background: url(../images/common/page-last.png) no-repeat center center; width:30px; height:30px; display: inline-block; font-size: 0 }
+
+#notice .notice-form {margin: 0;display: inline-block;text-align: left;}
+#notice .notice-form .form-group{margin-bottom: 40px;}
+#notice .notice-form .division{border-top: 1px dotted #eee;margin-top: 40px;padding-top: 40px;}
+#notice .notice-form .read-area .form-group label{font-size: 14px;line-height: 22px;color: #544297;margin-bottom: 20px;}
+#notice .notice-form .read-area .form-group span{display: block;border-bottom: 2px solid #666;padding-bottom: 15px;font-weight: bold;}
+#notice .notice-form .read-area .form-group .form-control{width: 100%;height: 40px;line-height: 40px;padding: 4px 0px;box-sizing: border-box;color: #ccc;border: 0;text-align: left;font-size: 16px;color: #333333;font-weight: normal;}
+#notice .notice-form .read-area .form-group .form-control[type="password"]{font-family: Arial}
+#notice .notice-form .read-area .form-group textarea{height: 120px !important;text-align: left;padding: 0;}
+#notice .button-area .btn-major{display: inline-block;height: 50px;background: #544297;color: #fff;padding: 15px 20px 15px 60px;font-size: 16px;border: 1px dotted #544297;}
+
+
+
+
 @media all and (max-width: 1200px) {
 
 
@@ -937,6 +980,44 @@ input[type=number] {  -moz-appearance:textfield;} /*Hide Spinner in Input Number
     #program .program-pagination ul li.next{display:block}
     #program .program-pagination ul li.first{display:none}
     #program .program-pagination ul li.last{display:none}
+
+
+    #notice {padding: 20px;min-width: auto;}
+    #notice .notice-wrapper{max-width: 360px;display: inline-block;}
+    #notice .title{font-size: 20px;line-height: 25px;margin-bottom: 60px;}
+    #notice .notice-list{display: block;width: 100%;}
+    #notice .notice-list .list{display: block;width: 100%;border-top: 2px solid #544297;}
+    #notice .notice-list .list li.table-header{display: none;}
+    #notice .notice-list .list li.table-body{display: block;width: 100%;overflow: auto;padding: 10px 0;min-height: 70px;border-bottom: 1px solid #ddd;}
+    #notice .notice-list .list li .title{font-size: 14px;color: #544297;margin-bottom: 0;line-height: 14px;font-weight: bold;text-align: center;}
+    #notice .notice-list .list li .text{font-size: 16px;color: #666;vertical-align: middle;line-height: 1.5;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+    #notice .notice-list .list li .text-purple{color: #544297; font-weight: bold}
+    #notice .notice-list .list li .area-number .text{color: #999;}
+    #notice .notice-list .list li .area-date .text{color: #999;}
+    #notice .notice-list .list li .area-title .text{color: #333;font-weight:bold;vertical-align: middle;line-height: 1.5;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+    #notice .notice-list .list li .area-attach .text{line-height: 30px;text-align: left;}
+    #notice .notice-list .list li .text em{color: #544297;vertical-align: middle;line-height: 1.5;overflow: hidden;text-overflow: ellipsis;max-width: 100%;display: block;white-space: nowrap;}
+    #notice .notice-list .list li .image{position: absolute;top: 0;left: 0;}
+    #notice .notice-list .list li .area-number{float: none;width: 100%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;display: block;}
+    #notice .notice-list .list li .area-date{float: none;width: 100%;text-align: left;padding-right: 10px;box-sizing: border-box;vertical-align: top;display: block;}
+    #notice .notice-list .list li .area-title{float: none;width: 100%;position: relative;box-sizing: border-box;text-align: left;display: block;padding: 0;}
+    #notice .notice-list .list li .area-attach{float: none;width: 100%;padding: 0;box-sizing: border-box;text-align: left;display: block;}
+
+    #notice .notice-pagination{margin-top: 40px;width: 100%;text-align: center;position: relative;}
+    #notice .notice-pagination ul{overflow: hidden;text-align: center;display: inline-block;width: 400;}
+    #notice .notice-pagination ul li{display:none}
+    #notice .notice-pagination ul li:nth-child(2){display:block}
+    #notice .notice-pagination ul li:nth-child(3){display:block}
+    #notice .notice-pagination ul li:nth-child(4){display:block}
+    #notice .notice-pagination ul li:nth-child(5){display:block}
+    #notice .notice-pagination ul li:nth-child(6){display:block}
+    #notice .notice-pagination ul li.next{display:block}
+    #notice .notice-pagination ul li.first{display:none}
+    #notice .notice-pagination ul li.last{display:none}
+
+ 
+
+
 
 
 }
